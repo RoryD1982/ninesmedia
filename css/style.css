@@ -687,7 +687,7 @@ footer {
   border-bottom: 1px solid #1e1e1e;
   margin-bottom: 2rem;
 }
-.footer-brand img { height: 28px; filter: invert(1); margin-bottom: 1rem; }
+.footer-brand img { margin-bottom: 1rem; }
 .footer-tagline {
   font-size: 0.8rem;
   color: #555;
