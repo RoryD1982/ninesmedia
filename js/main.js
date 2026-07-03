@@ -89,12 +89,27 @@ if (form) {
     btn.disabled = true;
     formStatus.className = 'form-status';
 
-    // Simulate form submission (replace with actual endpoint)
-    await new Promise(r => setTimeout(r, 1200));
+    try {
+      const response = await fetch('https://formspree.io/f/xvzjvjyy', {
+        method: 'POST',
+        headers: { 'Accept': 'application/json' },
+        body: new FormData(form)
+      });
 
-    formStatus.className = 'form-status success';
-    formStatus.textContent = 'Thanks for reaching out — we\'ll be in touch shortly.';
-    form.reset();
+      if (response.ok) {
+        formStatus.className = 'form-status success';
+        formStatus.textContent = 'Thanks for reaching out — we\'ll be in touch shortly.';
+        form.reset();
+      } else {
+        const data = await response.json();
+        formStatus.className = 'form-status error';
+        formStatus.textContent = data.errors ? data.errors.map(e => e.message).join(', ') : 'Something went wrong. Please try again or email us directly.';
+      }
+    } catch (err) {
+      formStatus.className = 'form-status error';
+      formStatus.textContent = 'Something went wrong. Please email us at info@ninesmedia.co.za';
+    }
+
     btn.textContent = 'Send Message';
     btn.disabled = false;
   });
