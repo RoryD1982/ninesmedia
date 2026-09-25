@@ -33,7 +33,7 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
+    "@type": ["LocalBusiness", "MarketingAgency"],
     "@id": "https://www.ninesmedia.com/#business",
     "name": "Nines Media",
     "description": "Full-service digital marketing and AI agency in Johannesburg specialising in Google Ads, PPC, Facebook marketing, social media management, branding, digital advertising, and web development.",
@@ -85,7 +85,302 @@
     "sameAs": [
       "https://www.facebook.com/ninesmedia",
       "https://www.instagram.com/ninesmedia",
-      "https://www.linkedin.com/company/ninesmedia"
+      "https://www.linkedin.com/company/ninesmedia",
+      "https://www.google.com/search?q=nines+media"
+    ]
+  }
+  </script>
+
+  <!-- AggregateRating Schema (enables star ratings in Google search results) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "@id": "https://www.ninesmedia.com/#rating",
+    "name": "Nines Media",
+    "url": "https://www.ninesmedia.com",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5.0",
+      "reviewCount": "6",
+      "bestRating": "5",
+      "worstRating": "1"
+    },
+    "review": [
+      {
+        "@type": "Review",
+        "author": {"@type": "Person", "name": "Thabo M."},
+        "reviewRating": {"@type": "Rating", "ratingValue": "5"},
+        "reviewBody": "Nines Media completely transformed our digital presence. Their strategic approach to our social media and Google campaigns delivered measurable results within weeks. Professional, creative and truly invested in your brand's success."
+      },
+      {
+        "@type": "Review",
+        "author": {"@type": "Person", "name": "Samantha K."},
+        "reviewRating": {"@type": "Rating", "ratingValue": "5"},
+        "reviewBody": "Outstanding work on our website redesign. The team at Nines understood our brand vision immediately and delivered a site that exceeded all expectations."
+      },
+      {
+        "@type": "Review",
+        "author": {"@type": "Person", "name": "Nomvula V."},
+        "reviewRating": {"@type": "Rating", "ratingValue": "5"},
+        "reviewBody": "As a certified Google & META Partner, Nines Media brought real expertise to our paid media strategy. Our leads increased by over 60% in just two months."
+      },
+      {
+        "@type": "Review",
+        "author": {"@type": "Person", "name": "Jacques D."},
+        "reviewRating": {"@type": "Rating", "ratingValue": "5"},
+        "reviewBody": "The branding work Nines did for us was world-class. They took time to understand our business deeply before putting pen to paper."
+      },
+      {
+        "@type": "Review",
+        "author": {"@type": "Person", "name": "Lebogang P."},
+        "reviewRating": {"@type": "Rating", "ratingValue": "5"},
+        "reviewBody": "Hired Nines for digital strategy consulting and training — best investment we've made. Our in-house team now runs our campaigns with confidence."
+      },
+      {
+        "@type": "Review",
+        "author": {"@type": "Person", "name": "Andrew C."},
+        "reviewRating": {"@type": "Rating", "ratingValue": "5"},
+        "reviewBody": "We've worked with several digital agencies over the years, but Nines Media stands out. They treat your business like their own."
+      }
+    ]
+  }
+  </script>
+
+  <!-- BreadcrumbList Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://www.ninesmedia.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Services",
+        "item": "https://www.ninesmedia.com/#services"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Our Work",
+        "item": "https://www.ninesmedia.com/#work"
+      },
+      {
+        "@type": "ListItem",
+        "position": 4,
+        "name": "Blog",
+        "item": "https://www.ninesmedia.com/#blog"
+      },
+      {
+        "@type": "ListItem",
+        "position": 5,
+        "name": "About",
+        "item": "https://www.ninesmedia.com/#about"
+      },
+      {
+        "@type": "ListItem",
+        "position": 6,
+        "name": "Contact",
+        "item": "https://www.ninesmedia.com/#contact"
+      }
+    ]
+  }
+  </script>
+
+  <!-- Article Schema for Blog Posts -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "Nines Media Blog",
+    "url": "https://www.ninesmedia.com/#blog",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@type": "Article",
+          "@id": "https://www.ninesmedia.com/#blog-post-1",
+          "headline": "Why Digital Strategy Must Come Before Tactics",
+          "description": "Most brands rush to advertise before they know who they're speaking to. Here's why starting with strategy always wins in the long run.",
+          "datePublished": "2025-06-01",
+          "author": {"@type": "Organization", "name": "Nines Media"},
+          "publisher": {
+            "@type": "Organization",
+            "name": "Nines Media",
+            "logo": {"@type": "ImageObject", "url": "https://www.ninesmedia.com/images/logo-header.svg"}
+          },
+          "url": "https://www.ninesmedia.com/#blog",
+          "keywords": "digital strategy, digital marketing agency Johannesburg, marketing strategy South Africa"
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "item": {
+          "@type": "Article",
+          "@id": "https://www.ninesmedia.com/#blog-post-2",
+          "headline": "Getting the Most from Meta & Google in 2025",
+          "description": "The paid media landscape has shifted dramatically. A certified partner perspective on what's working right now.",
+          "datePublished": "2025-05-01",
+          "author": {"@type": "Organization", "name": "Nines Media"},
+          "publisher": {
+            "@type": "Organization",
+            "name": "Nines Media",
+            "logo": {"@type": "ImageObject", "url": "https://www.ninesmedia.com/images/logo-header.svg"}
+          },
+          "url": "https://www.ninesmedia.com/#blog",
+          "keywords": "Google Ads agency Johannesburg, Meta ads South Africa, Facebook advertising, PPC South Africa"
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@type": "Article",
+          "@id": "https://www.ninesmedia.com/#blog-post-3",
+          "headline": "Brand Identity in the Age of Scroll",
+          "description": "Attention is the scarcest resource. How to build a visual identity that cuts through in under three seconds on any feed.",
+          "datePublished": "2025-04-01",
+          "author": {"@type": "Organization", "name": "Nines Media"},
+          "publisher": {
+            "@type": "Organization",
+            "name": "Nines Media",
+            "logo": {"@type": "ImageObject", "url": "https://www.ninesmedia.com/images/logo-header.svg"}
+          },
+          "url": "https://www.ninesmedia.com/#blog",
+          "keywords": "branding agency Johannesburg, brand identity South Africa, creative agency Johannesburg"
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 4,
+        "item": {
+          "@type": "Article",
+          "@id": "https://www.ninesmedia.com/#blog-post-4",
+          "headline": "The South African Social Media Landscape in 2025",
+          "description": "Platform preferences, content formats, and audience behaviours unique to the South African digital market.",
+          "datePublished": "2025-03-01",
+          "author": {"@type": "Organization", "name": "Nines Media"},
+          "publisher": {
+            "@type": "Organization",
+            "name": "Nines Media",
+            "logo": {"@type": "ImageObject", "url": "https://www.ninesmedia.com/images/logo-header.svg"}
+          },
+          "url": "https://www.ninesmedia.com/#blog",
+          "keywords": "social media agency South Africa, social media management Johannesburg, Meta ads, TikTok marketing South Africa"
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 5,
+        "item": {
+          "@type": "Article",
+          "@id": "https://www.ninesmedia.com/#blog-post-5",
+          "headline": "Building an In-house Digital Team That Actually Works",
+          "description": "The case for upskilling your existing team versus outsourcing everything — and how to find the right balance.",
+          "datePublished": "2025-02-01",
+          "author": {"@type": "Organization", "name": "Nines Media"},
+          "publisher": {
+            "@type": "Organization",
+            "name": "Nines Media",
+            "logo": {"@type": "ImageObject", "url": "https://www.ninesmedia.com/images/logo-header.svg"}
+          },
+          "url": "https://www.ninesmedia.com/#blog",
+          "keywords": "digital marketing training South Africa, digital marketing consulting Johannesburg, marketing agency Gauteng"
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 6,
+        "item": {
+          "@type": "Article",
+          "@id": "https://www.ninesmedia.com/#blog-post-6",
+          "headline": "What Makes a Website Work in 2025",
+          "description": "Speed, clarity, and conversion — the three things every business website must nail before worrying about anything else.",
+          "datePublished": "2025-01-01",
+          "author": {"@type": "Organization", "name": "Nines Media"},
+          "publisher": {
+            "@type": "Organization",
+            "name": "Nines Media",
+            "logo": {"@type": "ImageObject", "url": "https://www.ninesmedia.com/images/logo-header.svg"}
+          },
+          "url": "https://www.ninesmedia.com/#blog",
+          "keywords": "web development South Africa, website design Johannesburg, web agency Gauteng"
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- ProfessionalService Schema (complements LocalBusiness) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "@id": "https://www.ninesmedia.com/#professional",
+    "name": "Nines Media",
+    "description": "Full-service digital marketing, creative and advertising agency in Johannesburg, South Africa.",
+    "url": "https://www.ninesmedia.com",
+    "telephone": "+27786975931",
+    "email": "hello@ninesmedia.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "1st Floor, Dainfern Square, Cnr William Nicol & Broadacres Dr",
+      "addressLocality": "Dainfern",
+      "addressRegion": "Gauteng",
+      "postalCode": "2191",
+      "addressCountry": "ZA"
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+        "opens": "08:00",
+        "closes": "17:00"
+      }
+    ],
+    "priceRange": "$$",
+    "currenciesAccepted": "ZAR",
+    "paymentAccepted": "Cash, Bank Transfer, Credit Card",
+    "areaServed": [
+      {"@type": "City", "name": "Johannesburg"},
+      {"@type": "City", "name": "Sandton"},
+      {"@type": "City", "name": "Fourways"},
+      {"@type": "City", "name": "Rosebank"},
+      {"@type": "City", "name": "Midrand"},
+      {"@type": "City", "name": "Pretoria"},
+      {"@type": "City", "name": "Cape Town"},
+      {"@type": "City", "name": "Durban"},
+      {"@type": "Country", "name": "South Africa"}
+    ],
+    "serviceType": [
+      "Digital Marketing",
+      "Google Ads Management",
+      "PPC Advertising",
+      "Facebook Marketing",
+      "Meta Advertising",
+      "LinkedIn Marketing",
+      "YouTube Advertising",
+      "TikTok Marketing",
+      "Social Media Management",
+      "Branding and Logo Design",
+      "Content Creation",
+      "Copywriting",
+      "Web Design and Development",
+      "Digital Strategy",
+      "AI Marketing",
+      "Brand Strategy",
+      "Creative Agency Services",
+      "Advertising Agency Services",
+      "Marketing Consulting",
+      "Marketing Training"
     ]
   }
   </script>
@@ -154,8 +449,19 @@
   <link rel="apple-touch-icon" href="images/favicon.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Barlow+Condensed:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Barlow+Condensed:wght@300;400;500;600;700&display=swap" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Barlow+Condensed:wght@300;400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Barlow+Condensed:wght@300;400;500;600;700&display=swap" rel="stylesheet" /></noscript>
   <link rel="stylesheet" href="css/style.css" />
+  <!-- Performance: DNS prefetch for third-party domains -->
+  <link rel="dns-prefetch" href="//fonts.googleapis.com" />
+  <link rel="dns-prefetch" href="//fonts.gstatic.com" />
+  <link rel="dns-prefetch" href="//formspree.io" />
+  <!-- Inline critical style: prevent layout shift on font load -->
+  <style>
+    body { font-display: swap; }
+    @font-face { font-display: swap; }
+  </style>
 </head>
 <body>
 
@@ -163,7 +469,7 @@
 <nav>
   <div class="nav-inner">
     <a class="nav-logo" href="#" data-page="home">
-      <img src="images/logo-header.svg" alt="Nines Media" style="height: 52px; width: auto;" />
+      <img src="images/logo-header.svg" alt="Nines Media" fetchpriority="high" decoding="sync" style="height: 52px; width: auto;" />
     </a>
     <ul class="nav-links">
       <li><a href="#" data-page="home" class="active">Home</a></li>
@@ -216,7 +522,7 @@
         </div>
       </div>
       <div class="hero-visual">
-        <img src="images/semi.svg" alt="Nines Media — Digital Marketing &amp; Creative Agency Johannesburg" class="hero-n-mark" style="width: min(460px, 90%); opacity: 0.06;" />
+        <img src="images/semi.svg" alt="Nines Media — Digital Marketing &amp; Creative Agency Johannesburg" class="hero-n-mark" loading="eager" fetchpriority="high" style="width: min(460px, 90%); opacity: 0.06;" />
       </div>
     </div>
     <div class="hero-scroll">
@@ -517,6 +823,32 @@
           <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
         </a>
       </div>
+    </div>
+  </section>
+
+  <!-- Service Areas -->
+  <section class="section" aria-label="Service areas for Nines Media digital marketing agency">
+    <div class="section-inner">
+      <p class="section-label reveal" style="justify-content: center; text-align: center;">Where We Work</p>
+      <h2 class="section-title reveal reveal-delay-1" style="text-align: center; margin-bottom: 0.75rem;">Johannesburg &amp; Beyond</h2>
+      <p class="section-subtitle reveal reveal-delay-2" style="text-align: center; max-width: 600px; margin: 0 auto 3rem;">
+        Based in Dainfern, Johannesburg — we serve businesses across Gauteng and throughout South Africa.
+      </p>
+      <div class="reveal" style="display: flex; flex-wrap: wrap; gap: 0.75rem; justify-content: center; max-width: 760px; margin: 0 auto;">
+        <span style="padding: 0.5rem 1.25rem; border: 1px solid var(--light-gray); font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--dark-gray);">Sandton</span>
+        <span style="padding: 0.5rem 1.25rem; border: 1px solid var(--light-gray); font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--dark-gray);">Fourways</span>
+        <span style="padding: 0.5rem 1.25rem; border: 1px solid var(--light-gray); font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--dark-gray);">Rosebank</span>
+        <span style="padding: 0.5rem 1.25rem; border: 1px solid var(--light-gray); font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--dark-gray);">Midrand</span>
+        <span style="padding: 0.5rem 1.25rem; border: 1px solid var(--light-gray); font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--dark-gray);">Pretoria</span>
+        <span style="padding: 0.5rem 1.25rem; border: 1px solid var(--light-gray); font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--dark-gray);">Randburg</span>
+        <span style="padding: 0.5rem 1.25rem; border: 1px solid var(--light-gray); font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--dark-gray);">Cape Town</span>
+        <span style="padding: 0.5rem 1.25rem; border: 1px solid var(--light-gray); font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--dark-gray);">Durban</span>
+        <span style="padding: 0.5rem 1.25rem; border: 1px solid var(--light-gray); font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--dark-gray);">Port Elizabeth</span>
+        <span style="padding: 0.5rem 1.25rem; border: 1px solid var(--black); font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--black); font-weight: 500;">South Africa</span>
+      </div>
+      <p class="reveal" style="text-align: center; font-size: 0.8rem; color: var(--dark-gray); margin-top: 2rem; letter-spacing: 0.05em;">
+        Digital marketing agency · Google Ads · PPC · Facebook &amp; Meta Ads · Branding · Social Media · Web Development
+      </p>
     </div>
   </section>
 
@@ -1210,7 +1542,7 @@
   <div class="footer-inner">
     <div class="footer-top">
       <div class="footer-brand">
-        <img src="images/logo-footer.svg" alt="Nines Media" style="height: 60px; width: auto;" />
+        <img src="images/logo-footer.svg" alt="Nines Media" loading="lazy" style="height: 60px; width: auto;" />
         <p class="footer-tagline" style="margin-top: 1rem;">Progressive digital experiences. We dream, explore, create and craft work that is entrenched in the lives of people.</p>
         <p style="font-size: 0.75rem; color: #444; line-height: 1.8; margin-top: 1rem;">Digital marketing agency &amp; creative agency in Johannesburg, South Africa. Google Ads management, PPC advertising, Facebook &amp; Meta ads, LinkedIn marketing, social media management, branding, content creation, web development and AI marketing — serving Sandton, Fourways, Rosebank, Gauteng &amp; beyond.</p>
       </div>
