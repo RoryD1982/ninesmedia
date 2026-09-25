@@ -595,6 +595,28 @@ nav.scrolled { border-bottom-color: var(--light-gray); }
 }
 .blog-link:hover { gap: 0.75rem; }
 
+/* ── BLOG ARTICLE EXPAND ── */
+.blog-expand-btn { cursor: pointer; }
+.blog-article-body {
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--light-gray);
+  font-size: 0.9rem;
+  line-height: 1.8;
+  color: var(--dark-gray);
+}
+.blog-article-body p { margin-bottom: 1rem; }
+.blog-article-body h3 {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--black);
+  margin: 1.5rem 0 0.75rem;
+}
+.blog-article-body strong { color: var(--black); font-weight: 600; }
+
 /* ── CONTACT ── */
 .contact-grid {
   display: grid;
