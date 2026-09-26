@@ -394,6 +394,112 @@ nav.scrolled { border-bottom-color: var(--light-gray); }
   line-height: 1.7;
 }
 
+/* ── SVC CARDS (new compact grid) ── */
+.svc-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  padding: 0;
+}
+
+.svc-card {
+  background: var(--white);
+  border: 1px solid var(--light-gray);
+  padding: 2rem;
+  position: relative;
+  overflow: hidden;
+  transition: background var(--transition), border-color var(--transition), transform var(--transition);
+  cursor: default;
+}
+.svc-card::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 2px;
+  background: var(--black);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform var(--transition);
+}
+.svc-card:hover {
+  background: var(--off-white);
+  transform: translateY(-2px);
+}
+.svc-card:hover::after { transform: scaleX(1); }
+
+.svc-card-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+.svc-num {
+  font-family: var(--font-display);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: var(--mid-gray);
+  min-width: 1.75rem;
+}
+.svc-card .svc-icon {
+  width: 28px;
+  height: 28px;
+  stroke: var(--black);
+  fill: none;
+  stroke-width: 1.5;
+  flex-shrink: 0;
+}
+.svc-name {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.6rem;
+  line-height: 1.2;
+}
+.svc-desc {
+  font-size: 0.82rem;
+  color: var(--dark-gray);
+  line-height: 1.65;
+  margin-bottom: 1rem;
+}
+.svc-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+.svc-list li {
+  font-size: 0.78rem;
+  color: var(--dark-gray);
+  padding-left: 1rem;
+  position: relative;
+  line-height: 1.4;
+}
+.svc-list li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  color: var(--black);
+  font-size: 0.7rem;
+}
+
+/* dark section svc cards */
+.section-dark .svc-card {
+  background: #1a1a1a;
+  border-color: #2a2a2a;
+}
+.section-dark .svc-card:hover { background: #222; }
+.section-dark .svc-card::after { background: var(--white); }
+.section-dark .svc-name { color: var(--white); }
+.section-dark .svc-desc,
+.section-dark .svc-list li { color: #aaa; }
+.section-dark .svc-list li::before { color: var(--white); }
+.section-dark .svc-card .svc-icon { stroke: var(--white); }
+
 /* ── STATS STRIP ── */
 .stats-strip {
   display: grid;
