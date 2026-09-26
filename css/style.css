@@ -1675,3 +1675,201 @@ footer {
   :root:not([data-theme="light"]) .audit-radio:has(input:checked) { background: #2a0010; border-color: var(--accent); }
   :root:not([data-theme="light"]) .audit-side-icon { background: #2a0010; }
 }
+
+/* ── Nav phone link ── */
+.nav-phone {
+  font-family: var(--font-display);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  color: var(--dark-gray);
+  text-decoration: none;
+  opacity: 0.65;
+  transition: opacity 0.2s ease;
+  white-space: nowrap;
+}
+.nav-phone:hover { opacity: 1; color: var(--accent); }
+@media (max-width: 900px) { .nav-phone { display: none; } }
+
+/* ── Mobile phone link ── */
+.mobile-phone-link {
+  display: block;
+  padding: 0.8rem 2rem;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1rem;
+  color: var(--accent);
+  text-decoration: none;
+}
+
+/* ── Pricing page ── */
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+@media (max-width: 900px) { .pricing-grid { grid-template-columns: 1fr; max-width: 480px; margin-inline: auto; } }
+
+.pricing-card {
+  position: relative;
+  background: #f9f9f7;
+  border: 1px solid #e8e8e4;
+  border-radius: 4px;
+  padding: 2.5rem 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+.pricing-card--featured {
+  border-color: var(--accent);
+  background: #fff;
+  box-shadow: 0 8px 40px rgba(255,45,107,0.08);
+}
+.pricing-popular {
+  position: absolute;
+  top: -13px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--accent);
+  color: #fff;
+  font-family: var(--font-display);
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  padding: 0.3rem 1rem;
+  border-radius: 2px;
+  white-space: nowrap;
+}
+.pricing-badge {
+  font-family: var(--font-display);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 1.5rem;
+}
+.pricing-from {
+  font-size: 0.75rem;
+  color: #999;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-bottom: 0.25rem;
+}
+.pricing-price {
+  font-family: var(--font-display);
+  font-size: clamp(2.4rem, 5vw, 3.2rem);
+  font-weight: 700;
+  line-height: 1;
+  color: var(--off-black);
+  margin-bottom: 1rem;
+}
+.pricing-freq {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #999;
+}
+.pricing-desc {
+  font-size: 0.85rem;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #e8e8e4;
+}
+.pricing-features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  flex: 1;
+}
+.pricing-features li {
+  font-size: 0.85rem;
+  color: #444;
+  padding-left: 1.4rem;
+  position: relative;
+  line-height: 1.5;
+}
+.pricing-features li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+  font-weight: 700;
+}
+.pricing-cta {
+  display: block;
+  text-align: center;
+  margin-top: auto;
+}
+.pricing-note {
+  text-align: center;
+  font-size: 0.8rem;
+  color: #888;
+  max-width: 640px;
+  margin: 0 auto 4rem;
+  line-height: 1.7;
+}
+
+/* ── Add-ons ── */
+.addons-section { border-top: 1px solid #e8e8e4; padding-top: 4rem; }
+.addons-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+@media (max-width: 700px) { .addons-grid { grid-template-columns: 1fr; } }
+.addon-item {
+  background: #f9f9f7;
+  border: 1px solid #e8e8e4;
+  border-radius: 4px;
+  padding: 1.75rem;
+}
+.addon-name {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: var(--off-black);
+  margin-bottom: 0.4rem;
+}
+.addon-price {
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--accent);
+  margin-bottom: 0.75rem;
+}
+.addon-desc {
+  font-size: 0.82rem;
+  color: #666;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* ── Pricing dark mode ── */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .pricing-card { background: #111; border-color: #222; }
+  :root:not([data-theme="light"]) .pricing-card--featured { background: #1a0008; border-color: var(--accent); }
+  :root:not([data-theme="light"]) .pricing-price { color: #eee; }
+  :root:not([data-theme="light"]) .pricing-desc { color: #888; border-color: #2a2a2a; }
+  :root:not([data-theme="light"]) .pricing-features li { color: #aaa; }
+  :root:not([data-theme="light"]) .addon-item { background: #111; border-color: #222; }
+  :root:not([data-theme="light"]) .addon-name { color: #eee; }
+  :root:not([data-theme="light"]) .addon-desc { color: #888; }
+  :root:not([data-theme="light"]) .addons-section { border-color: #222; }
+}
+:root[data-theme="dark"] .pricing-card { background: #111; border-color: #222; }
+:root[data-theme="dark"] .pricing-card--featured { background: #1a0008; border-color: var(--accent); }
+:root[data-theme="dark"] .pricing-price { color: #eee; }
+:root[data-theme="dark"] .pricing-desc { color: #888; border-color: #2a2a2a; }
+:root[data-theme="dark"] .pricing-features li { color: #aaa; }
+:root[data-theme="dark"] .addon-item { background: #111; border-color: #222; }
+:root[data-theme="dark"] .addon-name { color: #eee; }
+:root[data-theme="dark"] .addon-desc { color: #888; }
+:root[data-theme="dark"] .addons-section { border-color: #222; }
