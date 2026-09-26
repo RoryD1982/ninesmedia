@@ -441,13 +441,15 @@ nav.scrolled { border-bottom-color: var(--light-gray); }
   color: var(--mid-gray);
   min-width: 1.75rem;
 }
-.svc-card .svc-icon {
+.svc-icon {
   width: 28px;
   height: 28px;
+  min-width: 28px;
   stroke: var(--black);
   fill: none;
   stroke-width: 1.5;
   flex-shrink: 0;
+  display: block;
 }
 .svc-name {
   font-family: var(--font-display);
