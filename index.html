@@ -481,6 +481,7 @@
       <li><a href="#" data-page="services">Services</a></li>
       <li><a href="#" data-page="work">Work</a></li>
       <li><a href="#" data-page="blog">Blog</a></li>
+      <li><a href="#" data-page="audit" class="nav-audit-link">Free Audit</a></li>
     </ul>
     <a href="#" class="nav-cta" data-page="contact">Get in touch</a>
     <button class="hamburger" aria-label="Menu">
@@ -498,6 +499,7 @@
     <li><a href="#" data-page="work">Work</a></li>
     <li><a href="#" data-page="blog">Blog</a></li>
     <li><a href="#" data-page="contact">Contact</a></li>
+    <li><a href="#" data-page="audit">Free Audit</a></li>
   </ul>
 </div>
 
@@ -505,8 +507,10 @@
 <div id="home" class="page">
 
   <!-- Hero -->
-  <section class="hero">
-    <div class="hero-inner">
+  <section class="hero" style="position:relative;overflow:hidden;">
+    <!-- Hot pink ambient orb -->
+    <div aria-hidden="true" style="position:absolute;top:-10%;right:-5%;width:min(600px,80vw);height:min(600px,80vw);border-radius:50%;background:radial-gradient(circle at center,#FF2D6B 0%,transparent 70%);opacity:0.08;animation:accentPulse 8s ease-in-out infinite;pointer-events:none;z-index:0;"></div>
+    <div class="hero-inner" style="position:relative;z-index:1;">
       <div class="hero-content">
         <p class="hero-eyebrow reveal">Creative &amp; Digital Marketing Agency — Johannesburg</p>
         <h1 class="hero-headline reveal reveal-delay-1">
@@ -552,6 +556,33 @@
     <div class="stat-item">
       <div class="stat-number" data-count="2" data-suffix="">0</div>
       <div class="stat-label">Certified Partners</div>
+    </div>
+  </div>
+
+  <!-- Marquee ticker -->
+  <div class="marquee-band" aria-hidden="true">
+    <div class="marquee-track">
+      <span>Google Ads</span><span class="marquee-dot">✦</span>
+      <span>Meta Advertising</span><span class="marquee-dot">✦</span>
+      <span>Brand Strategy</span><span class="marquee-dot">✦</span>
+      <span>Social Media</span><span class="marquee-dot">✦</span>
+      <span>Web Development</span><span class="marquee-dot">✦</span>
+      <span>AI-Powered Marketing</span><span class="marquee-dot">✦</span>
+      <span>TikTok Ads</span><span class="marquee-dot">✦</span>
+      <span>LinkedIn Campaigns</span><span class="marquee-dot">✦</span>
+      <span>Content Creation</span><span class="marquee-dot">✦</span>
+      <span>Performance Marketing</span><span class="marquee-dot">✦</span>
+      <!-- duplicate for seamless loop -->
+      <span>Google Ads</span><span class="marquee-dot">✦</span>
+      <span>Meta Advertising</span><span class="marquee-dot">✦</span>
+      <span>Brand Strategy</span><span class="marquee-dot">✦</span>
+      <span>Social Media</span><span class="marquee-dot">✦</span>
+      <span>Web Development</span><span class="marquee-dot">✦</span>
+      <span>AI-Powered Marketing</span><span class="marquee-dot">✦</span>
+      <span>TikTok Ads</span><span class="marquee-dot">✦</span>
+      <span>LinkedIn Campaigns</span><span class="marquee-dot">✦</span>
+      <span>Content Creation</span><span class="marquee-dot">✦</span>
+      <span>Performance Marketing</span><span class="marquee-dot">✦</span>
     </div>
   </div>
 
@@ -1049,6 +1080,94 @@
       <p class="reveal" style="text-align: center; font-size: 0.8rem; color: var(--dark-gray); margin-top: 2rem; letter-spacing: 0.05em;">
         Digital marketing agency · Google Ads · PPC · Facebook &amp; Meta Ads · Branding · Social Media · Web Development
       </p>
+    </div>
+  </section>
+
+  <!-- Agency vs Freelancer -->
+  <section class="section">
+    <div class="section-inner">
+      <p class="section-label reveal">Why Nines Media</p>
+      <h2 class="section-title reveal reveal-delay-1" style="margin-bottom: 0.5rem;">Agency or Freelancer?<br/><em>Here's the Honest Answer.</em></h2>
+      <p class="section-subtitle reveal reveal-delay-2" style="margin-bottom: 3.5rem;">A lot of businesses are weighing a cheap freelancer against a full-service agency. We get it. Here's what the comparison actually looks like when you need results.</p>
+      <div class="vs-grid reveal reveal-delay-3">
+        <div class="vs-col vs-col-agency">
+          <div class="vs-col-header">
+            <span class="vs-badge">Nines Media</span>
+            <p class="vs-col-sub">Full-Service Agency</p>
+          </div>
+          <ul class="vs-list">
+            <li><span class="vs-check">✓</span> Strategy, creative &amp; media under one roof — no gaps, no briefing 3 people</li>
+            <li><span class="vs-check">✓</span> Dedicated account manager + specialist team for each channel</li>
+            <li><span class="vs-check">✓</span> AI-powered tools and real-time dashboards — data you can act on</li>
+            <li><span class="vs-check">✓</span> Scales with you: R5k/month or R500k/month, same team quality</li>
+            <li><span class="vs-check">✓</span> Proven track record with SA brands across 6 industries</li>
+            <li><span class="vs-check">✓</span> You own all your assets, accounts and data — always</li>
+          </ul>
+        </div>
+        <div class="vs-col vs-col-freelancer">
+          <div class="vs-col-header">
+            <span class="vs-badge vs-badge-neutral">Freelancer</span>
+            <p class="vs-col-sub">Single Operator</p>
+          </div>
+          <ul class="vs-list">
+            <li><span class="vs-cross">✗</span> One person can't do great ads, great design and great copy simultaneously</li>
+            <li><span class="vs-cross">✗</span> Disappears on holidays, gets sick, or takes another big client</li>
+            <li><span class="vs-cross">✗</span> No shared knowledge — if they leave, you start from scratch</li>
+            <li><span class="vs-cross">✗</span> Limited by their own skill ceiling — no specialists to call on</li>
+            <li><span class="vs-cross">✗</span> Usually cheaper upfront, but expensive when campaigns underperform</li>
+            <li><span class="vs-cross">✗</span> Risk of losing access to your ad accounts when the relationship ends</li>
+          </ul>
+        </div>
+      </div>
+      <div style="text-align: center; margin-top: 3rem;">
+        <a href="#" class="btn-primary reveal" data-page="audit">Get a Free Audit — See What You're Missing →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section section-alt">
+    <div class="section-inner">
+      <p class="section-label reveal">Common Questions</p>
+      <h2 class="section-title reveal reveal-delay-1" style="margin-bottom: 3rem;">FAQ</h2>
+      <div class="faq-grid">
+        <div class="faq-item reveal">
+          <button class="faq-q" aria-expanded="false">How much does digital marketing cost with Nines Media?</button>
+          <div class="faq-a">
+            <p>Our retainers start from <strong>R5,000/month</strong> for a single-channel focus (e.g. Google Ads management) and scale up depending on channels, ad spend, and creative requirements. We'll give you a tailored quote after your free audit — no generic pricing, no surprises.</p>
+          </div>
+        </div>
+        <div class="faq-item reveal">
+          <button class="faq-q" aria-expanded="false">How quickly will I see results?</button>
+          <div class="faq-a">
+            <p>Paid channels (Google Ads, Meta) typically show measurable results within <strong>2–4 weeks</strong>. Organic channels (SEO, content) take 3–6 months to compound. We set clear benchmarks in your first 30 days and report weekly so you always know where you stand.</p>
+          </div>
+        </div>
+        <div class="faq-item reveal">
+          <button class="faq-q" aria-expanded="false">Do I own my ad accounts and creative assets?</button>
+          <div class="faq-a">
+            <p><strong>Yes, always.</strong> You retain full ownership of your Google Ads account, Meta Business Manager, and all creative files we produce. We request access, we never own it. If you ever move on, everything stays with you.</p>
+          </div>
+        </div>
+        <div class="faq-item reveal">
+          <button class="faq-q" aria-expanded="false">What industries do you work with?</button>
+          <div class="faq-a">
+            <p>We work across retail, professional services, hospitality, property, education, and e-commerce — primarily in South Africa. We've built campaigns for local service businesses (R5k/month budgets) and national brands (R500k/month budgets). The strategies differ; the rigour doesn't.</p>
+          </div>
+        </div>
+        <div class="faq-item reveal">
+          <button class="faq-q" aria-expanded="false">What does the free digital audit include?</button>
+          <div class="faq-a">
+            <p>A senior strategist reviews your current website, paid ads, social presence, and competitor landscape. You get a written report covering your biggest growth levers, where your budget is being wasted, and a prioritised action plan — no strings attached. <a href="#" data-page="audit" style="color: var(--accent);">Claim yours here →</a></p>
+          </div>
+        </div>
+        <div class="faq-item reveal">
+          <button class="faq-q" aria-expanded="false">Can you work with our existing in-house team?</button>
+          <div class="faq-a">
+            <p>Absolutely. Many of our clients have internal marketing staff who handle content and community. We slot in as the strategy, media buying, or performance layer — or we run the whole engine. We'll scope it around how you actually work.</p>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -2422,6 +2541,190 @@
 </div><!-- /work -->
 
 
+<!-- ══════════════ PAGE: AUDIT ══════════════ -->
+<div id="audit" class="page">
+  <div style="height: var(--nav-height);"></div>
+
+  <section class="section section-alt" style="padding-top: 5rem; padding-bottom: 3rem;">
+    <div class="section-inner">
+      <p class="section-label reveal">Free for SA Businesses</p>
+      <h1 class="section-title reveal reveal-delay-1" style="font-size: clamp(2.8rem, 7vw, 5.5rem); margin-bottom: 1rem;">Get Your Free<br/><em>Digital Marketing Audit</em></h1>
+      <p class="section-subtitle reveal reveal-delay-2" style="max-width: 620px; margin-bottom: 0;">A senior Nines Media strategist reviews your ads, website, social presence, and competitors — and hands you a written report with exactly what to fix and what to double down on. No pitch. No obligation.</p>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top: 2rem;">
+    <div class="section-inner">
+      <div class="audit-layout">
+
+        <!-- Form -->
+        <div class="audit-form-wrap">
+          <div class="audit-steps-indicator">
+            <span class="audit-step-dot active" data-step="1"></span>
+            <span class="audit-step-dot" data-step="2"></span>
+            <span class="audit-step-dot" data-step="3"></span>
+          </div>
+
+          <form id="audit-form" action="https://formspree.io/f/xvzjvjyy" method="POST" novalidate>
+            <input type="hidden" name="_subject" value="Free Audit Request — Nines Media" />
+            <input type="hidden" name="form_type" value="free_audit" />
+
+            <!-- Step 1: About You -->
+            <fieldset class="audit-fieldset active" data-fieldset="1">
+              <legend class="audit-legend">Step 1 of 3 — About Your Business</legend>
+              <div class="audit-field">
+                <label for="audit-name">Your Name *</label>
+                <input type="text" id="audit-name" name="name" placeholder="Jane Smith" required />
+              </div>
+              <div class="audit-field">
+                <label for="audit-company">Company Name *</label>
+                <input type="text" id="audit-company" name="company" placeholder="Acme (Pty) Ltd" required />
+              </div>
+              <div class="audit-field">
+                <label for="audit-industry">Industry / Sector *</label>
+                <select id="audit-industry" name="industry" required>
+                  <option value="" disabled selected>Select your industry</option>
+                  <option>Retail &amp; E-commerce</option>
+                  <option>Professional Services (Law, Finance, Consulting)</option>
+                  <option>Hospitality &amp; Tourism</option>
+                  <option>Property &amp; Real Estate</option>
+                  <option>Healthcare &amp; Wellness</option>
+                  <option>Education &amp; Training</option>
+                  <option>Technology &amp; SaaS</option>
+                  <option>Food &amp; Beverage</option>
+                  <option>Automotive</option>
+                  <option>Construction &amp; Manufacturing</option>
+                  <option>Non-Profit</option>
+                  <option>Other</option>
+                </select>
+              </div>
+              <div class="audit-field">
+                <label for="audit-website">Website URL</label>
+                <input type="url" id="audit-website" name="website" placeholder="https://yoursite.co.za" />
+              </div>
+              <button type="button" class="btn-primary audit-next" data-next="2">Next: Your Budget →</button>
+            </fieldset>
+
+            <!-- Step 2: Budget & Channels -->
+            <fieldset class="audit-fieldset" data-fieldset="2">
+              <legend class="audit-legend">Step 2 of 3 — Marketing Budget &amp; Channels</legend>
+              <div class="audit-field">
+                <label>Monthly Marketing Budget (ad spend + agency fees) *</label>
+                <div class="audit-radio-group">
+                  <label class="audit-radio"><input type="radio" name="budget" value="Under R5,000" required /><span>Under R5k</span></label>
+                  <label class="audit-radio"><input type="radio" name="budget" value="R5,000 – R15,000" /><span>R5k – R15k</span></label>
+                  <label class="audit-radio"><input type="radio" name="budget" value="R15,000 – R50,000" /><span>R15k – R50k</span></label>
+                  <label class="audit-radio"><input type="radio" name="budget" value="R50,000 – R150,000" /><span>R50k – R150k</span></label>
+                  <label class="audit-radio"><input type="radio" name="budget" value="R150,000+" /><span>R150k+</span></label>
+                </div>
+              </div>
+              <div class="audit-field">
+                <label>Which channels are you currently using? (select all that apply)</label>
+                <div class="audit-check-grid">
+                  <label class="audit-check"><input type="checkbox" name="channels" value="Google Ads" /><span>Google Ads</span></label>
+                  <label class="audit-check"><input type="checkbox" name="channels" value="Meta / Facebook Ads" /><span>Meta / Facebook Ads</span></label>
+                  <label class="audit-check"><input type="checkbox" name="channels" value="Instagram Ads" /><span>Instagram Ads</span></label>
+                  <label class="audit-check"><input type="checkbox" name="channels" value="TikTok Ads" /><span>TikTok Ads</span></label>
+                  <label class="audit-check"><input type="checkbox" name="channels" value="LinkedIn Ads" /><span>LinkedIn Ads</span></label>
+                  <label class="audit-check"><input type="checkbox" name="channels" value="SEO / Content" /><span>SEO / Content</span></label>
+                  <label class="audit-check"><input type="checkbox" name="channels" value="Email Marketing" /><span>Email Marketing</span></label>
+                  <label class="audit-check"><input type="checkbox" name="channels" value="None yet" /><span>None yet</span></label>
+                </div>
+              </div>
+              <div class="audit-btn-row">
+                <button type="button" class="audit-back" data-back="1">← Back</button>
+                <button type="button" class="btn-primary audit-next" data-next="3">Next: Your Challenge →</button>
+              </div>
+            </fieldset>
+
+            <!-- Step 3: Challenge & Contact -->
+            <fieldset class="audit-fieldset" data-fieldset="3">
+              <legend class="audit-legend">Step 3 of 3 — Your Biggest Challenge</legend>
+              <div class="audit-field">
+                <label>What's your biggest marketing challenge right now? *</label>
+                <div class="audit-radio-group audit-radio-group-col">
+                  <label class="audit-radio"><input type="radio" name="challenge" value="Not enough leads or enquiries" required /><span>Not enough leads or enquiries</span></label>
+                  <label class="audit-radio"><input type="radio" name="challenge" value="Leads are low quality / not converting" /><span>Leads are low quality / not converting</span></label>
+                  <label class="audit-radio"><input type="radio" name="challenge" value="Spending on ads but not seeing ROI" /><span>Spending on ads but not seeing ROI</span></label>
+                  <label class="audit-radio"><input type="radio" name="challenge" value="Brand awareness is too low" /><span>Brand awareness is too low</span></label>
+                  <label class="audit-radio"><input type="radio" name="challenge" value="Starting from scratch — need a full strategy" /><span>Starting from scratch — need a full strategy</span></label>
+                  <label class="audit-radio"><input type="radio" name="challenge" value="Unhappy with current agency / freelancer" /><span>Unhappy with current agency / freelancer</span></label>
+                </div>
+              </div>
+              <div class="audit-field">
+                <label for="audit-email">Email Address *</label>
+                <input type="email" id="audit-email" name="email" placeholder="jane@acme.co.za" required />
+              </div>
+              <div class="audit-field">
+                <label for="audit-phone">Phone Number</label>
+                <input type="tel" id="audit-phone" name="phone" placeholder="072 000 0000" />
+              </div>
+              <div class="audit-btn-row">
+                <button type="button" class="audit-back" data-back="2">← Back</button>
+                <button type="submit" class="btn-primary" style="flex:1;">Send My Audit Request →</button>
+              </div>
+            </fieldset>
+
+            <!-- Success -->
+            <div id="audit-success" class="audit-success" hidden>
+              <div class="audit-success-icon">✓</div>
+              <h2>You're on the list.</h2>
+              <p>A Nines Media strategist will review your digital presence and be in touch within <strong>1 business day</strong> with your personalised audit report.</p>
+              <p style="font-size: 0.85rem; color: var(--dark-gray); margin-top: 1rem;">In the meantime, follow us on Instagram <a href="https://instagram.com/ninesmedia" target="_blank" rel="noopener" style="color:var(--accent);">@ninesmedia</a> for daily tips.</p>
+            </div>
+          </form>
+        </div>
+
+        <!-- Side panel -->
+        <div class="audit-side">
+          <div class="audit-side-box">
+            <p class="audit-side-label">What's included</p>
+            <ul class="audit-side-list">
+              <li>
+                <span class="audit-side-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+                </span>
+                <div><strong>Ads Account Review</strong><br/>We pull what's working, what's wasting spend, and what your competitors are doing.</div>
+              </li>
+              <li>
+                <span class="audit-side-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                </span>
+                <div><strong>Website Conversion Check</strong><br/>Is your site turning visitors into leads? We flag the top friction points.</div>
+              </li>
+              <li>
+                <span class="audit-side-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                </span>
+                <div><strong>Competitor Landscape</strong><br/>See exactly who is outranking you, where, and why.</div>
+              </li>
+              <li>
+                <span class="audit-side-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+                </span>
+                <div><strong>Prioritised Action Plan</strong><br/>A clear, ranked list of what to fix first for the biggest lift.</div>
+              </li>
+            </ul>
+          </div>
+          <div class="audit-side-trust">
+            <p style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.15em; color: var(--dark-gray); margin-bottom: 1rem;">No strings attached</p>
+            <p style="font-size: 0.88rem; line-height: 1.7; color: var(--dark-gray);">This audit is genuinely free. We do it because roughly 1 in 3 businesses we audit become clients — the value speaks for itself. If you're not a fit, we'll tell you.</p>
+            <div style="margin-top: 1.5rem; display:flex; align-items:center; gap:0.75rem;">
+              <div style="width:40px;height:40px;border-radius:50%;background:var(--light-gray);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:0.8rem;">RM</div>
+              <div>
+                <p style="font-size:0.85rem;font-weight:600;margin:0;">Rory Davis</p>
+                <p style="font-size:0.75rem;color:var(--dark-gray);margin:0;">Co-founder, Nines Media</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</div><!-- /audit -->
+
 <!-- ══════════════ PAGE: CONTACT ══════════════ -->
 <div id="contact" class="page">
   <div style="height: var(--nav-height);"></div>
@@ -2549,7 +2852,7 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <p class="footer-copy">&copy; 2025 IMC Media (PTY) LTD T/A Nines Media. All rights reserved.</p>
+      <p class="footer-copy">&copy; 2026 IMC Media (PTY) LTD T/A Nines Media. All rights reserved.</p>
       <div class="footer-legal">
         <a href="#">Privacy Policy</a>
         <a href="#">Terms of Use</a>
@@ -2570,6 +2873,72 @@
 <script>
   // expose navigateTo globally for onclick handlers
   function navigateToPage(id) { navigateTo(id); }
+
+  // FAQ accordion
+  document.querySelectorAll('.faq-q').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var expanded = this.getAttribute('aria-expanded') === 'true';
+      // close all
+      document.querySelectorAll('.faq-q').forEach(function(b) {
+        b.setAttribute('aria-expanded','false');
+        b.nextElementSibling.style.maxHeight = null;
+      });
+      if (!expanded) {
+        this.setAttribute('aria-expanded','true');
+        this.nextElementSibling.style.maxHeight = this.nextElementSibling.scrollHeight + 'px';
+      }
+    });
+  });
+
+  // Audit multi-step form
+  (function() {
+    var form = document.getElementById('audit-form');
+    if (!form) return;
+    function showStep(n) {
+      form.querySelectorAll('.audit-fieldset').forEach(function(fs) {
+        fs.classList.toggle('active', fs.dataset.fieldset == n);
+      });
+      form.querySelectorAll('.audit-step-dot').forEach(function(d) {
+        d.classList.toggle('active', d.dataset.step <= n);
+      });
+    }
+    form.querySelectorAll('.audit-next').forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        var current = form.querySelector('.audit-fieldset.active');
+        // basic validation
+        var inputs = current.querySelectorAll('[required]');
+        var valid = true;
+        inputs.forEach(function(inp) {
+          if (inp.type === 'radio') {
+            var group = current.querySelectorAll('[name="'+inp.name+'"]');
+            var checked = false;
+            group.forEach(function(r){ if(r.checked) checked = true; });
+            if (!checked) { valid = false; inp.closest('.audit-radio-group').style.outline = '2px solid #FF2D6B'; }
+            else inp.closest('.audit-radio-group').style.outline = '';
+          } else if (!inp.value.trim()) {
+            valid = false; inp.style.borderColor = '#FF2D6B';
+          } else { inp.style.borderColor = ''; }
+        });
+        if (valid) showStep(parseInt(this.dataset.next));
+      });
+    });
+    form.querySelectorAll('.audit-back').forEach(function(btn) {
+      btn.addEventListener('click', function() { showStep(parseInt(this.dataset.back)); });
+    });
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      var data = new FormData(form);
+      fetch(form.action, { method: 'POST', body: data, headers: { 'Accept': 'application/json' } })
+        .then(function(r) {
+          if (r.ok) {
+            form.querySelectorAll('.audit-fieldset').forEach(function(f){ f.hidden = true; });
+            form.querySelector('.audit-step-dot')?.closest('.audit-steps-indicator')?.setAttribute('hidden','');
+            document.getElementById('audit-success').hidden = false;
+          }
+        })
+        .catch(function(){});
+    });
+  })();
 
   // Sticky audit bar — show after scrolling past hero
   (function() {
@@ -2595,7 +2964,7 @@
       <span style="font-size:0.65rem;letter-spacing:0.15em;text-transform:uppercase;background:#222;color:#888;padding:0.25rem 0.6rem;white-space:nowrap;">Free for SA businesses</span>
       <span style="font-size:0.82rem;color:#aaa;line-height:1.4;">Get a no-obligation digital marketing audit — we'll show you exactly where you're losing leads.</span>
     </div>
-    <a href="#" data-page="contact" onclick="navigateToPage('contact');document.getElementById('sticky-audit-bar').style.display='none';" style="font-family:'Barlow Condensed',sans-serif;font-size:0.85rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#fff;background:#FF2D6B;padding:0.65rem 1.5rem;text-decoration:none;white-space:nowrap;flex-shrink:0;">Get My Free Audit →</a>
+    <a href="#" data-page="audit" onclick="navigateToPage('audit');document.getElementById('sticky-audit-bar').style.display='none';" style="font-family:'Barlow Condensed',sans-serif;font-size:0.85rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#fff;background:#FF2D6B;padding:0.65rem 1.5rem;text-decoration:none;white-space:nowrap;flex-shrink:0;">Get My Free Audit →</a>
   </div>
   <button id="sticky-bar-close" aria-label="Close" style="background:none;border:none;color:#555;font-size:1.5rem;cursor:pointer;padding:0.25rem 0.5rem;line-height:1;flex-shrink:0;">✕</button>
 </div>
