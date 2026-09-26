@@ -1131,42 +1131,42 @@
       <p class="section-label reveal">Common Questions</p>
       <h2 class="section-title reveal reveal-delay-1" style="margin-bottom: 3rem;">FAQ</h2>
       <div class="faq-grid">
-        <div class="faq-item reveal">
-          <button class="faq-q" aria-expanded="false">How much does digital marketing cost with Nines Media?</button>
+        <details class="faq-item reveal">
+          <summary class="faq-q">How much does digital marketing cost with Nines Media?</summary>
           <div class="faq-a">
             <p>Our retainers start from <strong>R5,000/month</strong> for a single-channel focus (e.g. Google Ads management) and scale up depending on channels, ad spend, and creative requirements. We'll give you a tailored quote after your free audit — no generic pricing, no surprises.</p>
           </div>
-        </div>
-        <div class="faq-item reveal">
-          <button class="faq-q" aria-expanded="false">How quickly will I see results?</button>
+        </details>
+        <details class="faq-item reveal">
+          <summary class="faq-q">How quickly will I see results?</summary>
           <div class="faq-a">
             <p>Paid channels (Google Ads, Meta) typically show measurable results within <strong>2–4 weeks</strong>. Organic channels (SEO, content) take 3–6 months to compound. We set clear benchmarks in your first 30 days and report weekly so you always know where you stand.</p>
           </div>
-        </div>
-        <div class="faq-item reveal">
-          <button class="faq-q" aria-expanded="false">Do I own my ad accounts and creative assets?</button>
+        </details>
+        <details class="faq-item reveal">
+          <summary class="faq-q">Do I own my ad accounts and creative assets?</summary>
           <div class="faq-a">
             <p><strong>Yes, always.</strong> You retain full ownership of your Google Ads account, Meta Business Manager, and all creative files we produce. We request access, we never own it. If you ever move on, everything stays with you.</p>
           </div>
-        </div>
-        <div class="faq-item reveal">
-          <button class="faq-q" aria-expanded="false">What industries do you work with?</button>
+        </details>
+        <details class="faq-item reveal">
+          <summary class="faq-q">What industries do you work with?</summary>
           <div class="faq-a">
             <p>We work across retail, professional services, hospitality, property, education, and e-commerce — primarily in South Africa. We've built campaigns for local service businesses (R5k/month budgets) and national brands (R500k/month budgets). The strategies differ; the rigour doesn't.</p>
           </div>
-        </div>
-        <div class="faq-item reveal">
-          <button class="faq-q" aria-expanded="false">What does the free digital audit include?</button>
+        </details>
+        <details class="faq-item reveal">
+          <summary class="faq-q">What does the free digital audit include?</summary>
           <div class="faq-a">
             <p>A senior strategist reviews your current website, paid ads, social presence, and competitor landscape. You get a written report covering your biggest growth levers, where your budget is being wasted, and a prioritised action plan — no strings attached. <a href="#" data-page="audit" style="color: var(--accent);">Claim yours here →</a></p>
           </div>
-        </div>
-        <div class="faq-item reveal">
-          <button class="faq-q" aria-expanded="false">Can you work with our existing in-house team?</button>
+        </details>
+        <details class="faq-item reveal">
+          <summary class="faq-q">Can you work with our existing in-house team?</summary>
           <div class="faq-a">
             <p>Absolutely. Many of our clients have internal marketing staff who handle content and community. We slot in as the strategy, media buying, or performance layer — or we run the whole engine. We'll scope it around how you actually work.</p>
           </div>
-        </div>
+        </details>
       </div>
     </div>
   </section>
@@ -2874,18 +2874,13 @@
   // expose navigateTo globally for onclick handlers
   function navigateToPage(id) { navigateTo(id); }
 
-  // FAQ accordion
-  document.querySelectorAll('.faq-q').forEach(function(btn) {
-    btn.addEventListener('click', function() {
-      var expanded = this.getAttribute('aria-expanded') === 'true';
-      // close all
-      document.querySelectorAll('.faq-q').forEach(function(b) {
-        b.setAttribute('aria-expanded','false');
-        b.nextElementSibling.style.maxHeight = null;
-      });
-      if (!expanded) {
-        this.setAttribute('aria-expanded','true');
-        this.nextElementSibling.style.maxHeight = this.nextElementSibling.scrollHeight + 'px';
+  // FAQ — close others when one opens
+  document.querySelectorAll('.faq-item').forEach(function(det) {
+    det.addEventListener('toggle', function() {
+      if (det.open) {
+        document.querySelectorAll('.faq-item').forEach(function(other) {
+          if (other !== det) other.removeAttribute('open');
+        });
       }
     });
   });
