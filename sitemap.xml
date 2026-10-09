@@ -1,103 +1,208 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
-  <!-- Home -->
   <url>
     <loc>https://www.ninesmedia.com/</loc>
-    <lastmod>2026-09-26</lastmod>
-    <changefreq>monthly</changefreq>
+    <lastmod>2026-10-09</lastmod>
     <priority>1.0</priority>
   </url>
-
-  <!-- About -->
-  <url>
-    <loc>https://www.ninesmedia.com/#about</loc>
-    <lastmod>2026-09-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Services (SPA anchor + static page) -->
   <url>
     <loc>https://www.ninesmedia.com/services.html</loc>
-    <lastmod>2026-09-26</lastmod>
-    <changefreq>monthly</changefreq>
+    <lastmod>2026-10-09</lastmod>
     <priority>0.9</priority>
   </url>
-
-  <!-- Free Audit (SPA anchor + static page) -->
+  <url>
+    <loc>https://www.ninesmedia.com/pricing.html</loc>
+    <lastmod>2026-10-09</lastmod>
+    <priority>0.9</priority>
+  </url>
   <url>
     <loc>https://www.ninesmedia.com/free-audit.html</loc>
-    <lastmod>2026-09-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-
-  <!-- Work / Case Studies -->
-  <url>
-    <loc>https://www.ninesmedia.com/#work</loc>
-    <lastmod>2026-09-26</lastmod>
-    <changefreq>monthly</changefreq>
+    <lastmod>2026-10-09</lastmod>
     <priority>0.8</priority>
   </url>
-
-  <!-- Blog listing -->
   <url>
     <loc>https://www.ninesmedia.com/blog/</loc>
-    <lastmod>2026-09-26</lastmod>
-    <changefreq>weekly</changefreq>
+    <lastmod>2026-10-09</lastmod>
     <priority>0.8</priority>
   </url>
-
-  <!-- Blog Posts -->
+  <url>
+    <loc>https://www.ninesmedia.com/blog/tiktok-ads-south-africa.html</loc>
+    <lastmod>2026-10-09</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.ninesmedia.com/blog/local-seo-google-business-profile-south-africa.html</loc>
+    <lastmod>2026-10-09</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.ninesmedia.com/blog/google-ads-cost-south-africa.html</loc>
+    <lastmod>2026-10-09</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.ninesmedia.com/blog/get-recommended-by-chatgpt-ai-search.html</loc>
+    <lastmod>2026-10-09</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.ninesmedia.com/blog/facebook-ads-cost-south-africa.html</loc>
+    <lastmod>2026-10-09</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.ninesmedia.com/blog/digital-marketing-packages-pricing-south-africa.html</loc>
+    <lastmod>2026-10-09</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.ninesmedia.com/blog/digital-marketing-for-startups-south-africa.html</loc>
+    <lastmod>2026-10-09</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.ninesmedia.com/blog/how-long-digital-marketing-results.html</loc>
+    <lastmod>2026-10-09</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.ninesmedia.com/blog/google-ads-management-cost-south-africa.html</loc>
+    <lastmod>2026-10-09</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.ninesmedia.com/blog/digital-marketing-professional-services-south-africa.html</loc>
+    <lastmod>2026-10-09</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.ninesmedia.com/blog/seo-pricing-south-africa.html</loc>
+    <lastmod>2026-10-09</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.ninesmedia.com/blog/website-cost-south-africa.html</loc>
+    <lastmod>2026-10-09</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.ninesmedia.com/blog/google-ads-vs-facebook-ads-south-africa.html</loc>
+    <lastmod>2026-10-09</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.ninesmedia.com/blog/how-to-choose-a-digital-marketing-agency-johannesburg.html</loc>
+    <lastmod>2026-10-09</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.ninesmedia.com/blog/google-ads-lead-generation-south-africa.html</loc>
+    <lastmod>2026-10-09</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.ninesmedia.com/blog/social-media-packages-pricing-south-africa.html</loc>
+    <lastmod>2026-10-09</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.ninesmedia.com/blog/google-ads-guide-south-africa.html</loc>
+    <lastmod>2026-10-09</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.ninesmedia.com/blog/ai-digital-marketing-south-africa.html</loc>
+    <lastmod>2026-10-09</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.ninesmedia.com/blog/what-is-performance-marketing.html</loc>
+    <lastmod>2026-10-09</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.ninesmedia.com/blog/facebook-ads-that-convert-south-africa.html</loc>
+    <lastmod>2026-10-09</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.ninesmedia.com/blog/youtube-advertising-south-africa.html</loc>
+    <lastmod>2026-10-09</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.ninesmedia.com/blog/branding-vs-marketing.html</loc>
+    <lastmod>2026-10-09</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.ninesmedia.com/blog/linkedin-marketing-b2b-south-africa.html</loc>
+    <lastmod>2026-10-09</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.ninesmedia.com/blog/how-to-build-a-brand-identity.html</loc>
+    <lastmod>2026-10-09</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.ninesmedia.com/blog/instagram-marketing-south-africa.html</loc>
+    <lastmod>2026-10-09</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.ninesmedia.com/blog/google-ads-small-business-south-africa.html</loc>
+    <lastmod>2026-10-09</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.ninesmedia.com/blog/content-marketing-south-africa.html</loc>
+    <lastmod>2026-10-09</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.ninesmedia.com/blog/ecommerce-marketing-south-africa.html</loc>
+    <lastmod>2026-10-09</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.ninesmedia.com/blog/measure-digital-marketing-roi.html</loc>
+    <lastmod>2026-10-09</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.ninesmedia.com/blog/seo-for-south-african-businesses.html</loc>
+    <lastmod>2026-10-09</lastmod>
+    <priority>0.8</priority>
+  </url>
   <url>
     <loc>https://www.ninesmedia.com/blog/why-digital-strategy-comes-first.html</loc>
     <lastmod>2026-06-15</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.6</priority>
   </url>
-
   <url>
     <loc>https://www.ninesmedia.com/blog/meta-google-2026.html</loc>
     <lastmod>2026-05-10</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.6</priority>
   </url>
-
   <url>
     <loc>https://www.ninesmedia.com/blog/brand-identity-age-of-scroll.html</loc>
     <lastmod>2026-04-08</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.6</priority>
   </url>
-
   <url>
     <loc>https://www.ninesmedia.com/blog/south-african-social-media-2026.html</loc>
     <lastmod>2026-03-12</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.6</priority>
   </url>
-
   <url>
     <loc>https://www.ninesmedia.com/blog/building-in-house-digital-team.html</loc>
     <lastmod>2026-02-20</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.6</priority>
   </url>
-
   <url>
     <loc>https://www.ninesmedia.com/blog/what-makes-website-work-2026.html</loc>
     <lastmod>2026-01-15</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <!-- Contact -->
-  <url>
-    <loc>https://www.ninesmedia.com/#contact</loc>
-    <lastmod>2026-09-26</lastmod>
-    <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
-
 </urlset>

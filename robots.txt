@@ -1,8 +1,31 @@
+# Nines Media — robots.txt
+# Search engines and AI search/answer engines are welcome to crawl the public site.
+
 User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+
+# AI search & answer engines (explicitly allowed so the site can be cited)
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Googlebot
 Allow: /
 
 Sitemap: https://www.ninesmedia.com/sitemap.xml
-
-# Block access to any future admin or private directories
-Disallow: /admin/
-Disallow: /private/
