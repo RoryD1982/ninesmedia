@@ -11,8 +11,8 @@ const navLinks = document.querySelectorAll('[data-page]');
 // ── PER-PAGE META DATA ──
 const pageMeta = {
   home: {
-    title: 'Nines Media | Digital Marketing & AI Agency Johannesburg | Google Ads, PPC & Facebook Marketing',
-    description: 'Nines Media is a full-service digital marketing and AI agency in Johannesburg. Google Ads, PPC, Facebook marketing, social media management, branding and web development for South African brands.'
+    title: 'Digital Marketing Agency Johannesburg & South Africa | Nines Media',
+    description: 'Nines Media is a Google & Meta Partner digital marketing agency in Johannesburg. Google Ads & PPC management, Meta ads, SEO, social media and web design for South African businesses.'
   },
   about: {
     title: 'About Nines Media | Creative & Digital Marketing Agency Johannesburg, Gauteng',
