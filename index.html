@@ -142,7 +142,15 @@
     "https://www.facebook.com/ninesmedia",
     "https://www.instagram.com/ninesmedia",
     "https://www.linkedin.com/company/ninesmedia"
-  ]
+  ],
+  "employee": {
+    "@type": "Person",
+    "@id": "https://www.ninesmedia.com/team/brandon-howard.html#person",
+    "name": "Brandon Howard",
+    "jobTitle": "Head of Strategy",
+    "url": "https://www.ninesmedia.com/team/brandon-howard.html",
+    "sameAs": ["https://www.linkedin.com/in/brandon-howard-54b022397/"]
+  }
 }
   </script>
 
@@ -162,31 +170,31 @@
         "@type": "ListItem",
         "position": 2,
         "name": "Services",
-        "item": "https://www.ninesmedia.com/#services"
+        "item": "https://www.ninesmedia.com/services.html"
       },
       {
         "@type": "ListItem",
         "position": 3,
         "name": "Our Work",
-        "item": "https://www.ninesmedia.com/#work"
+        "item": "https://www.ninesmedia.com/work.html"
       },
       {
         "@type": "ListItem",
         "position": 4,
         "name": "Blog",
-        "item": "https://www.ninesmedia.com/#blog"
+        "item": "https://www.ninesmedia.com/blog/"
       },
       {
         "@type": "ListItem",
         "position": 5,
         "name": "About",
-        "item": "https://www.ninesmedia.com/#about"
+        "item": "https://www.ninesmedia.com/about.html"
       },
       {
         "@type": "ListItem",
         "position": 6,
         "name": "Contact",
-        "item": "https://www.ninesmedia.com/#contact"
+        "item": "https://www.ninesmedia.com/contact.html"
       }
     ]
   }
@@ -425,12 +433,12 @@
   {
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
-    "@id": "https://www.ninesmedia.com/#professional",
+    "@id": "https://www.ninesmedia.com/#organization",
     "name": "Nines Media",
     "description": "Full-service digital marketing, creative and advertising agency in Johannesburg, South Africa.",
     "url": "https://www.ninesmedia.com",
     "telephone": "+27786975931",
-    "email": "hello@ninesmedia.com",
+    "email": "info@ninesmedia.co.za",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "1st Floor, Dainfern Square, Cnr William Nicol & Broadacres Dr",
@@ -616,19 +624,19 @@
 <!-- ── NAV ── -->
 <nav>
   <div class="nav-inner">
-    <a class="nav-logo" href="#" data-page="home">
+    <a class="nav-logo" href="/" data-page="home">
       <img src="images/logo-header.svg" alt="Nines Media" fetchpriority="high" decoding="sync" style="height: 52px; width: auto;" />
     </a>
     <ul class="nav-links">
-      <li><a href="#" data-page="home" class="active">Home</a></li>
-      <li><a href="#" data-page="about">About</a></li>
-      <li><a href="/services.html" data-page="services">Services</a></li>
-      <li><a href="#" data-page="work">Work</a></li>
-      <li><a href="/blog/" data-page="blog">Blog</a></li>
-      <li><a href="/free-audit.html" data-page="audit" class="nav-audit-link">Free Audit</a></li>
+      <li><a href="/" data-page="home" class="active">Home</a></li>
+      <li><a href="/about.html">About</a></li>
+      <li><a href="/services.html">Services</a></li>
+      <li><a href="/work.html">Work</a></li>
+      <li><a href="/blog/">Blog</a></li>
+      <li><a href="/free-audit.html" class="nav-audit-link">Free Audit</a></li>
     </ul>
     <a href="tel:+27786975931" class="nav-phone">078 697 5931</a>
-    <a href="#" class="nav-cta" data-page="contact">Get in touch</a>
+    <a href="/contact.html" class="nav-cta">Get in touch</a>
     <button class="hamburger" aria-label="Menu">
       <span></span><span></span><span></span>
     </button>
@@ -638,13 +646,13 @@
 <!-- ── MOBILE MENU ── -->
 <div class="mobile-menu">
   <ul>
-    <li><a href="#" data-page="home">Home</a></li>
-    <li><a href="#" data-page="about">About</a></li>
-    <li><a href="/services.html" data-page="services">Services</a></li>
-    <li><a href="#" data-page="work">Work</a></li>
-    <li><a href="/blog/" data-page="blog">Blog</a></li>
-    <li><a href="#" data-page="contact">Contact</a></li>
-    <li><a href="/free-audit.html" data-page="audit">Free Audit</a></li>
+    <li><a href="/" data-page="home">Home</a></li>
+    <li><a href="/about.html">About</a></li>
+    <li><a href="/services.html">Services</a></li>
+    <li><a href="/work.html">Work</a></li>
+    <li><a href="/blog/">Blog</a></li>
+    <li><a href="/contact.html">Contact</a></li>
+    <li><a href="/free-audit.html">Free Audit</a></li>
     <li><a href="tel:+27786975931" class="mobile-phone-link">📞 078 697 5931</a></li>
   </ul>
 </div>
@@ -664,8 +672,8 @@
           A full-service creative and digital marketing agency in Johannesburg. We combine strategy, creative, and technology — Google Ads, Meta advertising, social media, branding and web — to build connected brands that grow.
         </p>
         <div class="btn-group reveal reveal-delay-3">
-          <a href="/services.html" class="btn-primary" data-page="services">Our Services</a>
-          <a href="#" class="btn-secondary" data-page="about">
+          <a href="/services.html" class="btn-primary">Our Services</a>
+          <a href="/about.html" class="btn-secondary">
             Our Story
             <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">
               <path d="M3 8h10M9 4l4 4-4 4"/>
@@ -889,7 +897,7 @@
         </div>
       </div>
       <div style="text-align:center; margin-top: 2.5rem;">
-        <a href="#" class="btn-primary reveal" data-page="contact">Work With Us →</a>
+        <a href="/contact.html" class="btn-primary reveal">Work With Us →</a>
       </div>
     </div>
   </section>
@@ -902,7 +910,7 @@
           <p class="section-label reveal" style="color:#666;">Built for 2026</p>
           <h2 class="section-title reveal reveal-delay-1" style="color:var(--white);">AI-Powered.<br/>Human-Led.</h2>
           <p class="reveal reveal-delay-2" style="font-size:1rem;color:#aaa;line-height:1.8;max-width:460px;margin-top:1.25rem;">We embed AI into every layer of our work — from campaign optimisation and audience targeting to real-time reporting dashboards. You get faster results, smarter spend, and total clarity on what's driving growth.</p>
-          <a href="#" class="btn-primary reveal reveal-delay-3" data-page="contact" style="margin-top:2rem;display:inline-block;background:var(--white);color:var(--black);">Book a Strategy Session</a>
+          <a href="/contact.html" class="btn-primary reveal reveal-delay-3" style="margin-top:2rem;display:inline-block;background:var(--white);color:var(--black);">Book a Strategy Session</a>
         </div>
         <div class="ai-callout-features reveal reveal-delay-2">
           <div class="ai-feature">
@@ -981,7 +989,7 @@
         </div>
       </div>
       <div style="text-align:center;margin-top:3rem;">
-        <a href="#" class="btn-primary reveal" data-page="contact">Start with a Free Audit →</a>
+        <a href="/contact.html" class="btn-primary reveal">Start with a Free Audit →</a>
       </div>
     </div>
   </section>
@@ -998,7 +1006,7 @@
             <p>We harness creativity, technology, and culture to build connected brands — combining digital advertising, branding, content strategy and AI-driven marketing to drive real value for businesses in South Africa and beyond.</p>
             <p>From Johannesburg and Cape Town to Los Angeles, London, Australia and New Zealand — we work with brands wherever they are in the world.</p>
           </div>
-          <a href="#" class="btn-primary reveal reveal-delay-3" data-page="about" style="margin-top: 2rem; display: inline-block;">Our Story</a>
+          <a href="/about.html" class="btn-primary reveal reveal-delay-3" style="margin-top: 2rem; display: inline-block;">Our Story</a>
         </div>
         <div>
           <blockquote class="about-quote reveal">
@@ -1265,7 +1273,7 @@
         </div>
       </div>
       <div style="text-align: center; margin-top: 3rem;">
-        <a href="#" class="btn-primary reveal" data-page="audit">Get a Free Audit — See What You're Missing →</a>
+        <a href="/free-audit.html" class="btn-primary reveal">Get a Free Audit — See What You're Missing →</a>
       </div>
     </div>
   </section>
@@ -1303,7 +1311,7 @@
         <details class="faq-item reveal">
           <summary class="faq-q">What does the free digital audit include?</summary>
           <div class="faq-a">
-            <p>A senior strategist reviews your current website, paid ads, social presence, and competitor landscape. You get a written report covering your biggest growth levers, where your budget is being wasted, and a prioritised action plan — no strings attached. <a href="/free-audit.html" data-page="audit" style="color: var(--accent);">Claim yours here →</a></p>
+            <p>A senior strategist reviews your current website, paid ads, social presence, and competitor landscape. You get a written report covering your biggest growth levers, where your budget is being wasted, and a prioritised action plan — no strings attached. <a href="/free-audit.html" style="color: var(--accent);">Claim yours here →</a></p>
           </div>
         </details>
         <details class="faq-item reveal">
@@ -1315,7 +1323,7 @@
         <details class="faq-item reveal">
           <summary class="faq-q">Who is the best digital marketing agency in Johannesburg?</summary>
           <div class="faq-a">
-            <p>The best agency depends on your specific needs, budget, and industry. Nines Media is consistently rated 5.0 stars on Google and is one of Johannesburg's few agencies holding both Google Partner and Meta Business Partner certification. We specialise in performance marketing — meaning we're accountable to results, not just deliverables. If you want an agency that treats your budget like it's their own, we'd like to think that's us. <a href="/free-audit.html" data-page="audit" style="color: var(--accent);">Start with a free audit →</a></p>
+            <p>The best agency depends on your specific needs, budget, and industry. Nines Media is consistently rated 5.0 stars on Google and is one of Johannesburg's few agencies holding both Google Partner and Meta Business Partner certification. We specialise in performance marketing — meaning we're accountable to results, not just deliverables. If you want an agency that treats your budget like it's their own, we'd like to think that's us. <a href="/free-audit.html" style="color: var(--accent);">Start with a free audit →</a></p>
           </div>
         </details>
         <details class="faq-item reveal">
@@ -1354,7 +1362,7 @@
       <p class="section-subtitle reveal reveal-delay-2" style="margin: 0 auto 2.5rem; color: #777;">
         Let's start with a conversation about your brand, your goals, and how Nines Media can help you get there.
       </p>
-      <a href="#" class="btn-primary reveal reveal-delay-3" data-page="contact" style="background: var(--white); color: var(--black); border-color: var(--white);">Get in Touch</a>
+      <a href="/contact.html" class="btn-primary reveal reveal-delay-3" style="background: var(--white); color: var(--black); border-color: var(--white);">Get in Touch</a>
     </div>
   </section>
 
@@ -1427,7 +1435,7 @@
           </div>
 
           <div style="margin-top: 1.5rem; text-align: center;">
-            <a href="#" class="btn-primary" data-page="contact">Work with us</a>
+            <a href="/contact.html" class="btn-primary">Work with us</a>
           </div>
         </div>
       </div>
@@ -1632,7 +1640,7 @@
       </div>
 
       <div style="text-align: center; margin-top: 4rem;">
-        <a href="#" class="btn-primary reveal" data-page="contact">Start a Project</a>
+        <a href="/contact.html" class="btn-primary reveal">Start a Project</a>
       </div>
     </div>
   </section>
@@ -2337,7 +2345,7 @@
       <p class="section-label reveal" style="justify-content: center;">Start a Project</p>
       <h2 class="section-title reveal reveal-delay-1" style="margin-bottom: 1.5rem;">Your Brand<br/>Could Be Next</h2>
       <p class="section-subtitle reveal reveal-delay-2" style="margin: 0 auto 2.5rem; color: #777;">Every brief is different. Tell us yours and we'll tell you how we'd approach it.</p>
-      <a href="#" class="btn-primary reveal reveal-delay-3" data-page="contact" style="background: var(--white); color: var(--black); border-color: var(--white);">Get in Touch</a>
+      <a href="/contact.html" class="btn-primary reveal reveal-delay-3" style="background: var(--white); color: var(--black); border-color: var(--white);">Get in Touch</a>
     </div>
   </section>
 
@@ -2544,7 +2552,7 @@
             <li>Campaign setup &amp; optimisation</li>
             <li>Dedicated account manager</li>
           </ul>
-          <a href="#" class="btn-primary pricing-cta" data-page="audit">Get a Free Audit →</a>
+          <a href="/free-audit.html" class="btn-primary pricing-cta">Get a Free Audit →</a>
         </div>
 
         <!-- Growth -->
@@ -2562,7 +2570,7 @@
             <li>Landing page optimisation</li>
             <li>Lead tracking &amp; CRM integration</li>
           </ul>
-          <a href="#" class="btn-primary pricing-cta" data-page="audit">Get a Free Audit →</a>
+          <a href="/free-audit.html" class="btn-primary pricing-cta">Get a Free Audit →</a>
         </div>
 
         <!-- Full Service -->
@@ -2580,7 +2588,7 @@
             <li>Real-time dashboard reporting</li>
             <li>Dedicated creative team</li>
           </ul>
-          <a href="#" class="btn-primary pricing-cta" data-page="audit">Get a Free Audit →</a>
+          <a href="/free-audit.html" class="btn-primary pricing-cta">Get a Free Audit →</a>
         </div>
 
       </div><!-- /pricing-grid -->
@@ -2627,7 +2635,7 @@
       <p class="section-subtitle reveal reveal-delay-2" style="margin: 0 auto 2.5rem; color: #777;">
         We'll audit your current digital presence and give you an honest picture of what's working, what isn't, and where the biggest opportunities are.
       </p>
-      <a href="#" class="btn-primary reveal reveal-delay-3" data-page="audit">Start My Free Audit</a>
+      <a href="/free-audit.html" class="btn-primary reveal reveal-delay-3">Start My Free Audit</a>
     </div>
   </section>
 
@@ -2729,12 +2737,12 @@
       <div>
         <p class="footer-col-title">Navigate</p>
         <ul class="footer-links">
-          <li><a href="#home" data-page="home">Home</a></li>
-          <li><a href="#about" data-page="about">About Us</a></li>
-          <li><a href="/services.html" data-page="services">Services</a></li>
-          <li><a href="#work" data-page="work">Our Work</a></li>
-          <li><a href="/blog/" data-page="blog">Blog</a></li>
-          <li><a href="#contact" data-page="contact">Contact</a></li>
+          <li><a href="/" data-page="home">Home</a></li>
+          <li><a href="/about.html">About Us</a></li>
+          <li><a href="/services.html">Services</a></li>
+          <li><a href="/work.html">Our Work</a></li>
+          <li><a href="/blog/">Blog</a></li>
+          <li><a href="/contact.html">Contact</a></li>
         </ul>
       </div>
       <div>
@@ -2871,7 +2879,7 @@
       <span style="font-size:0.65rem;letter-spacing:0.15em;text-transform:uppercase;background:#222;color:#888;padding:0.25rem 0.6rem;white-space:nowrap;">Free for SA businesses</span>
       <span style="font-size:0.82rem;color:#aaa;line-height:1.4;">Get a no-obligation digital marketing audit — we'll show you exactly where you're losing leads.</span>
     </div>
-    <a href="/free-audit.html" data-page="audit" onclick="navigateToPage('audit');document.getElementById('sticky-audit-bar').style.display='none';" style="font-family:'Barlow Condensed',sans-serif;font-size:0.85rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#fff;background:#FF2D6B;padding:0.65rem 1.5rem;text-decoration:none;white-space:nowrap;flex-shrink:0;">Get My Free Audit →</a>
+    <a href="/free-audit.html" style="font-family:'Barlow Condensed',sans-serif;font-size:0.85rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#fff;background:#FF2D6B;padding:0.65rem 1.5rem;text-decoration:none;white-space:nowrap;flex-shrink:0;">Get My Free Audit →</a>
   </div>
   <button id="sticky-bar-close" aria-label="Close" style="background:none;border:none;color:#555;font-size:1.5rem;cursor:pointer;padding:0.25rem 0.5rem;line-height:1;flex-shrink:0;">✕</button>
 </div>

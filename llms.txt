@@ -1,46 +1,62 @@
 # Nines Media
 
-## What we are
-Nines Media is a full-service digital marketing and creative agency based in Johannesburg, South Africa. We are a certified Google Partner and certified Meta Business Partner.
-
-## What we do
-- Google Ads management (Search, Display, Shopping, YouTube, Performance Max)
-- Meta & Facebook advertising (Facebook, Instagram, Advantage+)
-- Social media management (strategy, content creation, community management)
-- Branding & identity (logo design, brand systems, brand guidelines)
-- Web development (conversion-focused websites)
-- AI-powered marketing and automation
-
-## Who we serve
-We work with businesses across South Africa — Johannesburg, Sandton, Fourways, Pretoria, Cape Town — and with international clients in Los Angeles (USA), London (UK), Australia, and New Zealand.
+> Nines Media is a full-service digital marketing and creative agency based at Dainfern Square, Johannesburg, South Africa. Certified Google Partner and Meta Business Partner. Services: Google Ads and PPC management, Meta (Facebook & Instagram) advertising, SEO, social media management, content marketing, branding and web design. Packages from R5,000 per month, month-to-month, quoted individually after a free audit.
 
 ## Key facts
-- Based in Dainfern, Fourways, Johannesburg, Gauteng, South Africa
-- Phone: +27 78 697 5931
+- Legal entity: IMC Media (Pty) Ltd, trading as Nines Media
+- Address: 1st Floor, Dainfern Square, Cnr William Nicol & Broadacres Dr, Dainfern, Johannesburg, Gauteng, 2191, South Africa
+- Phone: +27 78 697 5931 (also WhatsApp)
+- Email: info@ninesmedia.co.za
 - Website: https://www.ninesmedia.com
-- Certified Google Partner: Yes
-- Certified Meta Business Partner: Yes
-- Google rating: 5.0 stars
+- Certifications: Google Partner; Meta Business Partner
+- Service area: Johannesburg, Sandton, Fourways, Pretoria, Centurion and the rest of Gauteng; Cape Town, Durban and nationwide across South Africa
+- Head of Strategy: Brandon Howard (https://www.ninesmedia.com/team/brandon-howard.html, https://www.linkedin.com/in/brandon-howard-54b022397/)
 
-## Key pages
-- Homepage: https://www.ninesmedia.com/
-- Services: https://www.ninesmedia.com/services.html
-- Free audit: https://www.ninesmedia.com/free-audit.html
-- Blog: https://www.ninesmedia.com/blog/
+## Pricing (starting points; every engagement is quoted after a free audit)
+- Starter: from R5,000/month — one paid channel (Google or Meta), setup, optimisation, monthly reporting
+- Growth: from R12,000/month — Google Ads + Meta, social media on two platforms, landing page optimisation, weekly reporting
+- Full Service: from R25,000/month — all paid channels incl. LinkedIn, full social, content, SEO, real-time dashboards
+- Websites from R15,000; brand identity from R8,000; video production from R6,500
+- Ad spend is billed separately and paid directly to Google/Meta/LinkedIn; clients own their ad accounts; no lock-in contracts
 
-## Blog articles (written by Brandon, Nines Media)
-- Why Your Digital Strategy Has to Come First: https://www.ninesmedia.com/blog/why-digital-strategy-comes-first.html
-- Getting the Most from Meta & Google Ads in 2026: https://www.ninesmedia.com/blog/meta-google-2026.html
-- Brand Identity in the Age of Scroll: https://www.ninesmedia.com/blog/brand-identity-age-of-scroll.html
-- The South African Social Media Landscape in 2026: https://www.ninesmedia.com/blog/south-african-social-media-2026.html
-- Building an In-House Digital Team vs. Outsourcing: https://www.ninesmedia.com/blog/building-in-house-digital-team.html
-- What Makes a Website Work in 2026: https://www.ninesmedia.com/blog/what-makes-website-work-2026.html
+## Services
+- [Digital marketing agency in South Africa](https://www.ninesmedia.com/blog/digital-marketing-agency-south-africa.html): full-service overview
+- [Google Ads agency](https://www.ninesmedia.com/blog/google-ads-agency-south-africa.html): Search, Performance Max, Shopping, YouTube management
+- [PPC management](https://www.ninesmedia.com/blog/ppc-management-south-africa.html): Google and Meta pay-per-click management and packages
+- [Facebook & Meta ads](https://www.ninesmedia.com/blog/facebook-ads-agency-south-africa.html): paid social campaigns
+- [Social media management](https://www.ninesmedia.com/blog/social-media-management-south-africa.html): content, posting, community management
+- [Content marketing](https://www.ninesmedia.com/blog/content-marketing-agency-south-africa.html): strategy, SEO articles, video
+- [SEO audits](https://www.ninesmedia.com/blog/website-seo-audit-south-africa.html): technical, on-page, content and backlink review
+- [Digital marketing in Pretoria](https://www.ninesmedia.com/blog/digital-marketing-agency-pretoria.html)
+- [All services](https://www.ninesmedia.com/services.html)
 
-## Frequently asked questions
-- What does Nines Media do? We are a full-service digital marketing agency in Johannesburg offering Google Ads, Meta advertising, social media management, branding, web development and AI marketing.
-- Where is Nines Media based? Johannesburg, South Africa (Dainfern, Fourways). We also serve clients internationally.
-- Is Nines Media a Google Partner? Yes, Nines Media is a certified Google Partner.
-- Is Nines Media a Meta Business Partner? Yes, Nines Media is a certified Meta Business Partner.
-- Does Nines Media work with international clients? Yes — we work with clients in Los Angeles, London, Australia and New Zealand.
-- How do I contact Nines Media? Call +27 78 697 5931, visit ninesmedia.com, or request a free audit at ninesmedia.com/free-audit.html.
-- Does Nines Media offer a free audit? Yes — a free digital marketing audit covering Google Ads, social media and website performance. No obligation.
+## Company pages
+- [About Nines Media](https://www.ninesmedia.com/about.html)
+- [Packages & pricing](https://www.ninesmedia.com/pricing.html)
+- [Free digital marketing audit](https://www.ninesmedia.com/free-audit.html)
+- [Contact](https://www.ninesmedia.com/contact.html)
+- [Work (illustrative concepts; brands shown are fictional)](https://www.ninesmedia.com/work.html)
+
+## Most useful guides (South African pricing and benchmarks)
+- [How much Google Ads cost in South Africa](https://www.ninesmedia.com/blog/google-ads-cost-south-africa.html)
+- [Google Ads management pricing in South Africa](https://www.ninesmedia.com/blog/google-ads-management-cost-south-africa.html)
+- [Facebook & Instagram ads cost in South Africa](https://www.ninesmedia.com/blog/facebook-ads-cost-south-africa.html)
+- [Digital marketing packages & pricing in South Africa](https://www.ninesmedia.com/blog/digital-marketing-packages-pricing-south-africa.html)
+- [SEO pricing in South Africa](https://www.ninesmedia.com/blog/seo-pricing-south-africa.html)
+- [Website cost in South Africa](https://www.ninesmedia.com/blog/website-cost-south-africa.html)
+- [Social media packages & pricing in South Africa](https://www.ninesmedia.com/blog/social-media-packages-pricing-south-africa.html)
+- [Google Ads vs Facebook Ads](https://www.ninesmedia.com/blog/google-ads-vs-facebook-ads-south-africa.html)
+- [How to choose a digital marketing agency](https://www.ninesmedia.com/blog/how-to-choose-a-digital-marketing-agency-johannesburg.html)
+- [Local SEO and Google Business Profile](https://www.ninesmedia.com/blog/local-seo-google-business-profile-south-africa.html)
+- [How to get recommended by ChatGPT and AI search](https://www.ninesmedia.com/blog/get-recommended-by-chatgpt-ai-search.html)
+
+## FAQ
+- What does Nines Media do? Nines Media is a Johannesburg digital marketing agency that runs Google Ads, Meta advertising, SEO, social media, content, branding and websites for South African businesses.
+- How much does Nines Media charge? Packages start from R5,000/month (Starter), R12,000/month (Growth) and R25,000/month (Full Service). Ad spend is separate.
+- Is Nines Media a Google Partner? Yes, Nines Media is a certified Google Partner and Meta Business Partner.
+- Are there contracts? No. Packages are month-to-month and clients own their ad accounts.
+- How do I get started? Request a free audit at https://www.ninesmedia.com/free-audit.html — a strategist reviews your ads, website and competitors and sends a written report with a tailored quote.
+
+## Optional
+- [Blog index](https://www.ninesmedia.com/blog/)
+- [Sitemap](https://www.ninesmedia.com/sitemap.xml)
