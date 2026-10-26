@@ -1873,3 +1873,10 @@ footer {
 :root[data-theme="dark"] .addon-name { color: #eee; }
 :root[data-theme="dark"] .addon-desc { color: #888; }
 :root[data-theme="dark"] .addons-section { border-color: #222; }
+
+/* clickable service cards */
+.svc-card{cursor:pointer}
+.svc-more{display:inline-block;margin-top:1.25rem;font-size:.72rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--black);text-decoration:none;position:static}
+.svc-more-cover{position:absolute;inset:0;z-index:2}
+.svc-card:hover .svc-more{text-decoration:underline}
+.svc-card:focus-within{outline:2px solid var(--black);outline-offset:2px}
