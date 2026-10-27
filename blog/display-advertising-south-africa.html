@@ -84,20 +84,37 @@ img{max-width:100%}
 .nm-mobile-sub li{border:0!important;padding:0!important;margin:0!important}
 .nm-mobile-sub a{font-size:.85rem!important;opacity:.8;padding:.3rem 0!important;text-transform:none!important;letter-spacing:0!important;display:block}
 </style>
+<link rel="stylesheet" href="/css/nav.css" />
 </head>
 <body>
-<nav class="site-nav">
-  <div class="nav-inner">
-    <a href="/" class="nav-logo"><img src="/images/logo-header.svg" alt="Nines Media" style="height:40px;width:auto"></a>
-    <button class="hamburger" aria-label="Menu" aria-expanded="false">&#9776;</button>
-    <ul class="nav-links">
+<nav class="nm-nav nm-flow" aria-label="Main">
+  <div class="nm-inner">
+    <a class="nm-logo" href="/"><img src="/images/logo-header.svg" alt="Nines Media" width="150" height="52" fetchpriority="high" decoding="sync"></a>
+    <ul class="nm-links">
+      <li><a href="/">Home</a></li>
+      <li><a href="/about.html">About</a></li>
       <li class="nm-dd"><a href="/services.html" aria-haspopup="true">Services<span class="nm-caret" aria-hidden="true">▾</span></a><ul class="nm-dd-menu"><li><a href="/blog/google-ads-agency-south-africa.html">Google Ads Management</a></li><li><a href="/blog/ppc-management-south-africa.html">PPC Management</a></li><li><a href="/blog/facebook-ads-agency-south-africa.html">Facebook &amp; Meta Ads</a></li><li><a href="/blog/social-media-management-south-africa.html">Social Media Management</a></li><li><a href="/blog/seo-agency-south-africa.html">SEO</a></li><li><a href="/blog/content-marketing-agency-south-africa.html">Content Marketing</a></li><li><a href="/blog/web-design-south-africa.html">Website Design</a></li><li><a href="/blog/branding-agency-south-africa.html">Branding &amp; Identity</a></li><li class="nm-dd-all"><a href="/services.html">All services →</a></li></ul></li>
-      <li><a href="/pricing.html">Pricing</a></li>
-      <li><a href="/blog/">Blog</a></li>
-      <li><a href="/free-audit.html" class="nav-cta">Free Audit</a></li>
+      <li><a href="/work.html">Work</a></li>
+      <li><a href="/blog/" class="active" aria-current="page">Blog</a></li>
+      <li><a href="/free-audit.html" class="nm-audit">Free Audit</a></li>
     </ul>
+    <a href="tel:+27786975931" class="nm-phone">078 697 5931</a>
+    <a href="/contact.html" class="nm-cta">Get in touch</a>
+    <button class="nm-burger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
   </div>
 </nav>
+<div class="nm-mobile">
+  <ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="/about.html">About</a></li>
+    <li><a href="/services.html">Services</a><ul class="nm-mobile-sub"><li><a href="/blog/google-ads-agency-south-africa.html">Google Ads Management</a></li><li><a href="/blog/ppc-management-south-africa.html">PPC Management</a></li><li><a href="/blog/facebook-ads-agency-south-africa.html">Facebook &amp; Meta Ads</a></li><li><a href="/blog/social-media-management-south-africa.html">Social Media Management</a></li><li><a href="/blog/seo-agency-south-africa.html">SEO</a></li><li><a href="/blog/content-marketing-agency-south-africa.html">Content Marketing</a></li><li><a href="/blog/web-design-south-africa.html">Website Design</a></li><li><a href="/blog/branding-agency-south-africa.html">Branding &amp; Identity</a></li><li class="nm-dd-all"><a href="/services.html">All services →</a></li></ul></li>
+    <li><a href="/work.html">Work</a></li>
+    <li><a href="/blog/">Blog</a></li>
+    <li><a href="/contact.html">Contact</a></li>
+    <li><a href="/free-audit.html" class="nm-audit">Free Audit</a></li>
+    <li><a href="tel:+27786975931">078 697 5931</a></li>
+  </ul>
+</div>
 <header class="hero">
   <div class="hero-inner">
     <p class="hero-eyebrow">Google Ads</p>
@@ -112,11 +129,11 @@ img{max-width:100%}
 <p>The Google Display Network (GDN) reaches over 90% of internet users worldwide through millions of websites, apps, and Google properties. In South Africa, it covers major news sites (News24, TimesLive, IOL), YouTube, Gmail, and thousands of niche websites. Display ads appear as banners, images, or responsive ad units that adapt to available ad space.</p>
 
 <h2>Display vs Search: When to Use Each</h2>
-<table>
+<div style="overflow-x:auto"><table>
   <tr><th>Channel</th><th>Best For</th><th>User Intent</th></tr>
   <tr><td>Search (Google Ads)</td><td>Capturing existing demand</td><td>High — actively searching</td></tr>
   <tr><td>Display</td><td>Building awareness, retargeting</td><td>Low — passively browsing</td></tr>
-</table>
+</table></div>
 <p>Display is not a substitute for Search when leads are the primary goal. It excels at keeping your brand visible to people who've already shown interest (retargeting) or reaching new audiences before they start searching (awareness).</p>
 
 <h2>Display Targeting Options in South Africa</h2>
@@ -130,12 +147,12 @@ img{max-width:100%}
 </ul>
 
 <h2>Display Advertising Benchmarks for SA</h2>
-<table>
+<div style="overflow-x:auto"><table>
   <tr><th>Metric</th><th>SA Benchmark</th></tr>
   <tr><td>Cost per thousand impressions (CPM)</td><td>R5 – R40</td></tr>
   <tr><td>Click-through rate (CTR)</td><td>0.05% – 0.35%</td></tr>
   <tr><td>Cost per click (CPC)</td><td>R3 – R30</td></tr>
-</table>
+</table></div>
 
 <h2>Retargeting: The Highest-ROI Display Use Case</h2>
 <p>Retargeting (or remarketing) — showing display ads exclusively to people who've already visited your website — is the most effective display application for most SA businesses. The audience has already demonstrated intent; the ads simply keep you visible while they continue their research. A well-configured retargeting campaign can generate leads at a significantly lower CPC than prospecting campaigns.</p>
@@ -186,5 +203,6 @@ img{max-width:100%}
 var ham=document.querySelector('.hamburger'),nav=document.querySelector('.nav-links');
 if(ham)ham.addEventListener('click',function(){var o=nav.classList.toggle('open');ham.setAttribute('aria-expanded',o);});
 </script>
+<script src="/js/nav.js" defer></script>
 </body>
 </html>

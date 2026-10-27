@@ -86,20 +86,37 @@ if(ham)ham.addEventListener('click',function(){var o=nav.classList.toggle('open'
 .nm-mobile-sub li{border:0!important;padding:0!important;margin:0!important}
 .nm-mobile-sub a{font-size:.85rem!important;opacity:.8;padding:.3rem 0!important;text-transform:none!important;letter-spacing:0!important;display:block}
 </style>
+<link rel="stylesheet" href="/css/nav.css" />
 </head>
 <body>
-<nav class="site-nav">
-  <div class="nav-inner">
-    <a href="/" class="nav-logo"><img src="/images/logo-header.svg" alt="Nines Media" style="height:40px;width:auto"></a>
-    <button class="hamburger" aria-label="Menu" aria-expanded="false">&#9776;</button>
-    <ul class="nav-links">
+<nav class="nm-nav nm-flow" aria-label="Main">
+  <div class="nm-inner">
+    <a class="nm-logo" href="/"><img src="/images/logo-header.svg" alt="Nines Media" width="150" height="52" fetchpriority="high" decoding="sync"></a>
+    <ul class="nm-links">
+      <li><a href="/">Home</a></li>
+      <li><a href="/about.html">About</a></li>
       <li class="nm-dd"><a href="/services.html" aria-haspopup="true">Services<span class="nm-caret" aria-hidden="true">▾</span></a><ul class="nm-dd-menu"><li><a href="/blog/google-ads-agency-south-africa.html">Google Ads Management</a></li><li><a href="/blog/ppc-management-south-africa.html">PPC Management</a></li><li><a href="/blog/facebook-ads-agency-south-africa.html">Facebook &amp; Meta Ads</a></li><li><a href="/blog/social-media-management-south-africa.html">Social Media Management</a></li><li><a href="/blog/seo-agency-south-africa.html">SEO</a></li><li><a href="/blog/content-marketing-agency-south-africa.html">Content Marketing</a></li><li><a href="/blog/web-design-south-africa.html">Website Design</a></li><li><a href="/blog/branding-agency-south-africa.html">Branding &amp; Identity</a></li><li class="nm-dd-all"><a href="/services.html">All services →</a></li></ul></li>
-      <li><a href="/pricing.html">Pricing</a></li>
-      <li><a href="/blog/">Blog</a></li>
-      <li><a href="/free-audit.html" class="nav-cta">Free Audit</a></li>
+      <li><a href="/work.html">Work</a></li>
+      <li><a href="/blog/" class="active" aria-current="page">Blog</a></li>
+      <li><a href="/free-audit.html" class="nm-audit">Free Audit</a></li>
     </ul>
+    <a href="tel:+27786975931" class="nm-phone">078 697 5931</a>
+    <a href="/contact.html" class="nm-cta">Get in touch</a>
+    <button class="nm-burger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
   </div>
 </nav>
+<div class="nm-mobile">
+  <ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="/about.html">About</a></li>
+    <li><a href="/services.html">Services</a><ul class="nm-mobile-sub"><li><a href="/blog/google-ads-agency-south-africa.html">Google Ads Management</a></li><li><a href="/blog/ppc-management-south-africa.html">PPC Management</a></li><li><a href="/blog/facebook-ads-agency-south-africa.html">Facebook &amp; Meta Ads</a></li><li><a href="/blog/social-media-management-south-africa.html">Social Media Management</a></li><li><a href="/blog/seo-agency-south-africa.html">SEO</a></li><li><a href="/blog/content-marketing-agency-south-africa.html">Content Marketing</a></li><li><a href="/blog/web-design-south-africa.html">Website Design</a></li><li><a href="/blog/branding-agency-south-africa.html">Branding &amp; Identity</a></li><li class="nm-dd-all"><a href="/services.html">All services →</a></li></ul></li>
+    <li><a href="/work.html">Work</a></li>
+    <li><a href="/blog/">Blog</a></li>
+    <li><a href="/contact.html">Contact</a></li>
+    <li><a href="/free-audit.html" class="nm-audit">Free Audit</a></li>
+    <li><a href="tel:+27786975931">078 697 5931</a></li>
+  </ul>
+</div>
 <header class="hero">
   <div class="hero-inner">
     <p class="hero-eyebrow">Agency Guide</p>
@@ -170,5 +187,6 @@ if(ham)ham.addEventListener('click',function(){var o=nav.classList.toggle('open'
   </div>
 </div>
 </main>
+<script src="/js/nav.js" defer></script>
 </body>
 </html>

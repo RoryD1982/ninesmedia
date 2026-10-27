@@ -84,20 +84,37 @@ img{max-width:100%}
 .nm-mobile-sub li{border:0!important;padding:0!important;margin:0!important}
 .nm-mobile-sub a{font-size:.85rem!important;opacity:.8;padding:.3rem 0!important;text-transform:none!important;letter-spacing:0!important;display:block}
 </style>
+<link rel="stylesheet" href="/css/nav.css" />
 </head>
 <body>
-<nav class="site-nav">
-  <div class="nav-inner">
-    <a href="/" class="nav-logo"><img src="/images/logo-header.svg" alt="Nines Media" style="height:40px;width:auto"></a>
-    <button class="hamburger" aria-label="Menu" aria-expanded="false">&#9776;</button>
-    <ul class="nav-links">
+<nav class="nm-nav nm-flow" aria-label="Main">
+  <div class="nm-inner">
+    <a class="nm-logo" href="/"><img src="/images/logo-header.svg" alt="Nines Media" width="150" height="52" fetchpriority="high" decoding="sync"></a>
+    <ul class="nm-links">
+      <li><a href="/">Home</a></li>
+      <li><a href="/about.html">About</a></li>
       <li class="nm-dd"><a href="/services.html" aria-haspopup="true">Services<span class="nm-caret" aria-hidden="true">▾</span></a><ul class="nm-dd-menu"><li><a href="/blog/google-ads-agency-south-africa.html">Google Ads Management</a></li><li><a href="/blog/ppc-management-south-africa.html">PPC Management</a></li><li><a href="/blog/facebook-ads-agency-south-africa.html">Facebook &amp; Meta Ads</a></li><li><a href="/blog/social-media-management-south-africa.html">Social Media Management</a></li><li><a href="/blog/seo-agency-south-africa.html">SEO</a></li><li><a href="/blog/content-marketing-agency-south-africa.html">Content Marketing</a></li><li><a href="/blog/web-design-south-africa.html">Website Design</a></li><li><a href="/blog/branding-agency-south-africa.html">Branding &amp; Identity</a></li><li class="nm-dd-all"><a href="/services.html">All services →</a></li></ul></li>
-      <li><a href="/pricing.html">Pricing</a></li>
-      <li><a href="/blog/">Blog</a></li>
-      <li><a href="/free-audit.html" class="nav-cta">Free Audit</a></li>
+      <li><a href="/work.html">Work</a></li>
+      <li><a href="/blog/" class="active" aria-current="page">Blog</a></li>
+      <li><a href="/free-audit.html" class="nm-audit">Free Audit</a></li>
     </ul>
+    <a href="tel:+27786975931" class="nm-phone">078 697 5931</a>
+    <a href="/contact.html" class="nm-cta">Get in touch</a>
+    <button class="nm-burger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
   </div>
 </nav>
+<div class="nm-mobile">
+  <ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="/about.html">About</a></li>
+    <li><a href="/services.html">Services</a><ul class="nm-mobile-sub"><li><a href="/blog/google-ads-agency-south-africa.html">Google Ads Management</a></li><li><a href="/blog/ppc-management-south-africa.html">PPC Management</a></li><li><a href="/blog/facebook-ads-agency-south-africa.html">Facebook &amp; Meta Ads</a></li><li><a href="/blog/social-media-management-south-africa.html">Social Media Management</a></li><li><a href="/blog/seo-agency-south-africa.html">SEO</a></li><li><a href="/blog/content-marketing-agency-south-africa.html">Content Marketing</a></li><li><a href="/blog/web-design-south-africa.html">Website Design</a></li><li><a href="/blog/branding-agency-south-africa.html">Branding &amp; Identity</a></li><li class="nm-dd-all"><a href="/services.html">All services →</a></li></ul></li>
+    <li><a href="/work.html">Work</a></li>
+    <li><a href="/blog/">Blog</a></li>
+    <li><a href="/contact.html">Contact</a></li>
+    <li><a href="/free-audit.html" class="nm-audit">Free Audit</a></li>
+    <li><a href="tel:+27786975931">078 697 5931</a></li>
+  </ul>
+</div>
 <header class="hero">
   <div class="hero-inner">
     <p class="hero-eyebrow">Social Media</p>
@@ -109,13 +126,13 @@ img{max-width:100%}
 <p>South Africa has a vibrant and growing influencer ecosystem — from mega-influencers with national reach to micro-creators with deeply engaged niche audiences. For the right brand in the right category, influencer marketing can deliver strong brand awareness and measurable sales at competitive costs compared to traditional advertising.</p>
 
 <h2>SA Influencer Tiers and What to Expect</h2>
-<table>
+<div style="overflow-x:auto"><table>
   <tr><th>Tier</th><th>Followers</th><th>Per-Post Rate (Est.)</th><th>Best For</th></tr>
   <tr><td>Nano</td><td>1k – 10k</td><td>R500 – R2,000</td><td>Hyper-local, authentic UGC</td></tr>
   <tr><td>Micro</td><td>10k – 100k</td><td>R2,000 – R15,000</td><td>Niche categories, high engagement</td></tr>
   <tr><td>Mid-tier</td><td>100k – 500k</td><td>R15,000 – R60,000</td><td>Broad awareness, category authority</td></tr>
   <tr><td>Macro/Mega</td><td>500k+</td><td>R60,000 – R250,000+</td><td>Mass reach, brand campaigns</td></tr>
-</table>
+</table></div>
 
 <h2>Why Micro-Influencers Win for Most SA Brands</h2>
 <p>Most South African businesses — especially SMEs — get better ROI from micro-influencers (10k–100k followers) than from macro-influencers. The reasons:</p>
@@ -183,5 +200,6 @@ img{max-width:100%}
 var ham=document.querySelector('.hamburger'),nav=document.querySelector('.nav-links');
 if(ham)ham.addEventListener('click',function(){var o=nav.classList.toggle('open');ham.setAttribute('aria-expanded',o);});
 </script>
+<script src="/js/nav.js" defer></script>
 </body>
 </html>

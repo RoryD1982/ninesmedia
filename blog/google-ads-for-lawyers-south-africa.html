@@ -96,6 +96,7 @@
 .nm-mobile-sub li{border:0!important;padding:0!important;margin:0!important}
 .nm-mobile-sub a{font-size:.85rem!important;opacity:.8;padding:.3rem 0!important;text-transform:none!important;letter-spacing:0!important;display:block}
 </style>
+<link rel="stylesheet" href="/css/nav.css" />
 </head>
 <body>
 <!-- Google tag (gtag.js) -->
@@ -106,32 +107,32 @@
   gtag('js', new Date());
   gtag('config', 'G-TT1EQH7Q8V');
 </script>
-<nav>
-  <div class="nav-inner">
-    <a class="nav-logo" href="/">
-      <img src="../images/logo-header.svg" alt="Nines Media" fetchpriority="high" decoding="sync" style="height: 52px; width: auto;" />
-    </a>
-    <ul class="nav-links">
+<nav class="nm-nav" aria-label="Main">
+  <div class="nm-inner">
+    <a class="nm-logo" href="/"><img src="/images/logo-header.svg" alt="Nines Media" width="150" height="52" fetchpriority="high" decoding="sync"></a>
+    <ul class="nm-links">
       <li><a href="/">Home</a></li>
+      <li><a href="/about.html">About</a></li>
       <li class="nm-dd"><a href="/services.html" aria-haspopup="true">Services<span class="nm-caret" aria-hidden="true">▾</span></a><ul class="nm-dd-menu"><li><a href="/blog/google-ads-agency-south-africa.html">Google Ads Management</a></li><li><a href="/blog/ppc-management-south-africa.html">PPC Management</a></li><li><a href="/blog/facebook-ads-agency-south-africa.html">Facebook &amp; Meta Ads</a></li><li><a href="/blog/social-media-management-south-africa.html">Social Media Management</a></li><li><a href="/blog/seo-agency-south-africa.html">SEO</a></li><li><a href="/blog/content-marketing-agency-south-africa.html">Content Marketing</a></li><li><a href="/blog/web-design-south-africa.html">Website Design</a></li><li><a href="/blog/branding-agency-south-africa.html">Branding &amp; Identity</a></li><li class="nm-dd-all"><a href="/services.html">All services →</a></li></ul></li>
-      <li><a href="/blog/" class="active">Blog</a></li>
-      <li><a href="/free-audit.html" class="nav-audit-link">Free Audit</a></li>
+      <li><a href="/work.html">Work</a></li>
+      <li><a href="/blog/" class="active" aria-current="page">Blog</a></li>
+      <li><a href="/free-audit.html" class="nm-audit">Free Audit</a></li>
     </ul>
-    <a href="tel:+27786975931" class="nav-phone">078 697 5931</a>
-    <a href="/free-audit.html" class="nav-cta">Get Free Audit</a>
-    <button class="hamburger" aria-label="Menu" id="hamburger-btn">
-      <span></span><span></span><span></span>
-    </button>
+    <a href="tel:+27786975931" class="nm-phone">078 697 5931</a>
+    <a href="/contact.html" class="nm-cta">Get in touch</a>
+    <button class="nm-burger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
   </div>
 </nav>
-<div class="mobile-menu" id="mobile-menu">
+<div class="nm-mobile">
   <ul>
     <li><a href="/">Home</a></li>
+    <li><a href="/about.html">About</a></li>
     <li><a href="/services.html">Services</a><ul class="nm-mobile-sub"><li><a href="/blog/google-ads-agency-south-africa.html">Google Ads Management</a></li><li><a href="/blog/ppc-management-south-africa.html">PPC Management</a></li><li><a href="/blog/facebook-ads-agency-south-africa.html">Facebook &amp; Meta Ads</a></li><li><a href="/blog/social-media-management-south-africa.html">Social Media Management</a></li><li><a href="/blog/seo-agency-south-africa.html">SEO</a></li><li><a href="/blog/content-marketing-agency-south-africa.html">Content Marketing</a></li><li><a href="/blog/web-design-south-africa.html">Website Design</a></li><li><a href="/blog/branding-agency-south-africa.html">Branding &amp; Identity</a></li><li class="nm-dd-all"><a href="/services.html">All services →</a></li></ul></li>
+    <li><a href="/work.html">Work</a></li>
     <li><a href="/blog/">Blog</a></li>
     <li><a href="/contact.html">Contact</a></li>
-    <li><a href="/free-audit.html">Free Audit</a></li>
-    <li><a href="tel:+27786975931" class="mobile-phone-link">📞 078 697 5931</a></li>
+    <li><a href="/free-audit.html" class="nm-audit">Free Audit</a></li>
+    <li><a href="tel:+27786975931">078 697 5931</a></li>
   </ul>
 </div>
 <main class="article-wrap">
@@ -153,7 +154,7 @@
     <p>Yes. The Legal Practice Act and the Law Society rules on advertising have been liberalised significantly. South African attorneys can now advertise their services online, including through Google Ads, provided the advertising is not misleading, does not make guarantees about outcomes, and complies with general professional conduct rules. Google itself has no special restrictions on legal advertising in South Africa beyond its standard policies.</p>
 
     <h2>High-Value Legal Keywords in South Africa</h2>
-    <table class="data-table">
+    <div style="overflow-x:auto"><table class="data-table">
       <thead><tr><th>Keyword Category</th><th>Example Keywords</th><th>Avg CPC</th></tr></thead>
       <tbody>
         <tr><td>Divorce & Family Law</td><td>"divorce attorney Johannesburg", "child custody lawyer SA"</td><td>R55–R120</td></tr>
@@ -163,7 +164,7 @@
         <tr><td>Criminal Law</td><td>"criminal defence attorney", "bail application lawyer"</td><td>R45–R100</td></tr>
         <tr><td>Commercial Law</td><td>"contract lawyer SA", "business attorney Johannesburg"</td><td>R40–R85</td></tr>
       </tbody>
-    </table>
+    </table></div>
 
     <h2>What Budget Do Law Firms Need?</h2>
     <p>For a single-practice or small firm, a starting budget of R10,000–R20,000/month in ad spend is the minimum to generate meaningful volume in competitive categories. Larger firms or those in high-CPC practice areas should budget R25,000–R60,000/month in ad spend for substantive results.</p>
@@ -253,5 +254,6 @@
   const menu = document.getElementById('mobile-menu');
   if(btn && menu){btn.addEventListener('click',()=>{menu.classList.toggle('open');btn.classList.toggle('open');});}
 </script>
+<script src="/js/nav.js" defer></script>
 </body>
 </html>

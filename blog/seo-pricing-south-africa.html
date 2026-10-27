@@ -103,34 +103,35 @@
 .nm-mobile-sub li{border:0!important;padding:0!important;margin:0!important}
 .nm-mobile-sub a{font-size:.85rem!important;opacity:.8;padding:.3rem 0!important;text-transform:none!important;letter-spacing:0!important;display:block}
 </style>
+<link rel="stylesheet" href="/css/nav.css" />
 </head>
 <body>
-<nav>
-  <div class="nav-inner">
-    <a class="nav-logo" href="/">
-      <img src="../images/logo-header.svg" alt="Nines Media" fetchpriority="high" decoding="sync" style="height: 52px; width: auto;" />
-    </a>
-    <ul class="nav-links">
+<nav class="nm-nav" aria-label="Main">
+  <div class="nm-inner">
+    <a class="nm-logo" href="/"><img src="/images/logo-header.svg" alt="Nines Media" width="150" height="52" fetchpriority="high" decoding="sync"></a>
+    <ul class="nm-links">
       <li><a href="/">Home</a></li>
+      <li><a href="/about.html">About</a></li>
       <li class="nm-dd"><a href="/services.html" aria-haspopup="true">Services<span class="nm-caret" aria-hidden="true">▾</span></a><ul class="nm-dd-menu"><li><a href="/blog/google-ads-agency-south-africa.html">Google Ads Management</a></li><li><a href="/blog/ppc-management-south-africa.html">PPC Management</a></li><li><a href="/blog/facebook-ads-agency-south-africa.html">Facebook &amp; Meta Ads</a></li><li><a href="/blog/social-media-management-south-africa.html">Social Media Management</a></li><li><a href="/blog/seo-agency-south-africa.html">SEO</a></li><li><a href="/blog/content-marketing-agency-south-africa.html">Content Marketing</a></li><li><a href="/blog/web-design-south-africa.html">Website Design</a></li><li><a href="/blog/branding-agency-south-africa.html">Branding &amp; Identity</a></li><li class="nm-dd-all"><a href="/services.html">All services →</a></li></ul></li>
-      <li><a href="/blog/" class="active">Blog</a></li>
-      <li><a href="/free-audit.html" class="nav-audit-link">Free Audit</a></li>
+      <li><a href="/work.html">Work</a></li>
+      <li><a href="/blog/" class="active" aria-current="page">Blog</a></li>
+      <li><a href="/free-audit.html" class="nm-audit">Free Audit</a></li>
     </ul>
-    <a href="tel:+27786975931" class="nav-phone">078 697 5931</a>
-    <a href="/free-audit.html" class="nav-cta">Get Free Audit</a>
-    <button class="hamburger" aria-label="Menu" id="hamburger-btn">
-      <span></span><span></span><span></span>
-    </button>
+    <a href="tel:+27786975931" class="nm-phone">078 697 5931</a>
+    <a href="/contact.html" class="nm-cta">Get in touch</a>
+    <button class="nm-burger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
   </div>
 </nav>
-<div class="mobile-menu" id="mobile-menu">
+<div class="nm-mobile">
   <ul>
     <li><a href="/">Home</a></li>
+    <li><a href="/about.html">About</a></li>
     <li><a href="/services.html">Services</a><ul class="nm-mobile-sub"><li><a href="/blog/google-ads-agency-south-africa.html">Google Ads Management</a></li><li><a href="/blog/ppc-management-south-africa.html">PPC Management</a></li><li><a href="/blog/facebook-ads-agency-south-africa.html">Facebook &amp; Meta Ads</a></li><li><a href="/blog/social-media-management-south-africa.html">Social Media Management</a></li><li><a href="/blog/seo-agency-south-africa.html">SEO</a></li><li><a href="/blog/content-marketing-agency-south-africa.html">Content Marketing</a></li><li><a href="/blog/web-design-south-africa.html">Website Design</a></li><li><a href="/blog/branding-agency-south-africa.html">Branding &amp; Identity</a></li><li class="nm-dd-all"><a href="/services.html">All services →</a></li></ul></li>
+    <li><a href="/work.html">Work</a></li>
     <li><a href="/blog/">Blog</a></li>
     <li><a href="/contact.html">Contact</a></li>
-    <li><a href="/free-audit.html">Free Audit</a></li>
-    <li><a href="tel:+27786975931" class="mobile-phone-link">📞 078 697 5931</a></li>
+    <li><a href="/free-audit.html" class="nm-audit">Free Audit</a></li>
+    <li><a href="tel:+27786975931">078 697 5931</a></li>
   </ul>
 </div>
 <section class="article-hero">
@@ -154,13 +155,13 @@
     <p>The variability in pricing reflects the variability in scope, quality, and the competitiveness of your target keywords. Ranking for "plumber Fourways" requires less work than ranking for "debt counselling South Africa". Understand this context before evaluating any quote.</p>
 
     <h2>South African SEO Pricing Tiers</h2>
-    <table class="data-table">
+    <div style="overflow-x:auto"><table class="data-table">
       <tr><th>Monthly Budget</th><th>What to Expect</th><th>Best For</th></tr>
       <tr><td>R3,000–R6,000</td><td>Basic technical fixes, limited content, local citation building</td><td>Very local, low-competition niches only</td></tr>
       <tr><td>R7,000–R15,000</td><td>Keyword research, on-page optimisation, 2–4 content pieces/month, basic link building</td><td>SMEs in moderate-competition niches</td></tr>
       <tr><td>R16,000–R30,000</td><td>Full technical SEO, content strategy, regular publishing, proactive link building, detailed reporting</td><td>Businesses targeting competitive national keywords</td></tr>
       <tr><td>R31,000–R60,000+</td><td>Dedicated team, enterprise-scale content production, digital PR, full authority building</td><td>Large businesses, competitive national/international SEO</td></tr>
-    </table>
+    </table></div>
 
     <h2>How Long Does SEO Take?</h2>
     <p>This is the question most agencies dodge. The honest answer: you should see meaningful movement in rankings and organic traffic within <strong>3–6 months</strong> for most campaigns targeting achievable keywords. National, competitive terms can take 9–18 months. Anyone promising page one rankings within weeks is selling you something that either won't last or violates Google's guidelines.</p>
@@ -217,5 +218,6 @@
   const menu=document.getElementById('mobile-menu');
   if(btn&&menu){btn.addEventListener('click',()=>{menu.classList.toggle('open');btn.classList.toggle('open')})}
 </script>
+<script src="/js/nav.js" defer></script>
 </body>
 </html>

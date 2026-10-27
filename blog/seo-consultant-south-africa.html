@@ -86,20 +86,37 @@ if(ham)ham.addEventListener('click',function(){var o=nav.classList.toggle('open'
 .nm-mobile-sub li{border:0!important;padding:0!important;margin:0!important}
 .nm-mobile-sub a{font-size:.85rem!important;opacity:.8;padding:.3rem 0!important;text-transform:none!important;letter-spacing:0!important;display:block}
 </style>
+<link rel="stylesheet" href="/css/nav.css" />
 </head>
 <body>
-<nav class="site-nav">
-  <div class="nav-inner">
-    <a href="/" class="nav-logo"><img src="/images/logo-header.svg" alt="Nines Media" style="height:40px;width:auto"></a>
-    <button class="hamburger" aria-label="Menu" aria-expanded="false">&#9776;</button>
-    <ul class="nav-links">
+<nav class="nm-nav nm-flow" aria-label="Main">
+  <div class="nm-inner">
+    <a class="nm-logo" href="/"><img src="/images/logo-header.svg" alt="Nines Media" width="150" height="52" fetchpriority="high" decoding="sync"></a>
+    <ul class="nm-links">
+      <li><a href="/">Home</a></li>
+      <li><a href="/about.html">About</a></li>
       <li class="nm-dd"><a href="/services.html" aria-haspopup="true">Services<span class="nm-caret" aria-hidden="true">▾</span></a><ul class="nm-dd-menu"><li><a href="/blog/google-ads-agency-south-africa.html">Google Ads Management</a></li><li><a href="/blog/ppc-management-south-africa.html">PPC Management</a></li><li><a href="/blog/facebook-ads-agency-south-africa.html">Facebook &amp; Meta Ads</a></li><li><a href="/blog/social-media-management-south-africa.html">Social Media Management</a></li><li><a href="/blog/seo-agency-south-africa.html">SEO</a></li><li><a href="/blog/content-marketing-agency-south-africa.html">Content Marketing</a></li><li><a href="/blog/web-design-south-africa.html">Website Design</a></li><li><a href="/blog/branding-agency-south-africa.html">Branding &amp; Identity</a></li><li class="nm-dd-all"><a href="/services.html">All services →</a></li></ul></li>
-      <li><a href="/pricing.html">Pricing</a></li>
-      <li><a href="/blog/">Blog</a></li>
-      <li><a href="/free-audit.html" class="nav-cta">Free Audit</a></li>
+      <li><a href="/work.html">Work</a></li>
+      <li><a href="/blog/" class="active" aria-current="page">Blog</a></li>
+      <li><a href="/free-audit.html" class="nm-audit">Free Audit</a></li>
     </ul>
+    <a href="tel:+27786975931" class="nm-phone">078 697 5931</a>
+    <a href="/contact.html" class="nm-cta">Get in touch</a>
+    <button class="nm-burger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
   </div>
 </nav>
+<div class="nm-mobile">
+  <ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="/about.html">About</a></li>
+    <li><a href="/services.html">Services</a><ul class="nm-mobile-sub"><li><a href="/blog/google-ads-agency-south-africa.html">Google Ads Management</a></li><li><a href="/blog/ppc-management-south-africa.html">PPC Management</a></li><li><a href="/blog/facebook-ads-agency-south-africa.html">Facebook &amp; Meta Ads</a></li><li><a href="/blog/social-media-management-south-africa.html">Social Media Management</a></li><li><a href="/blog/seo-agency-south-africa.html">SEO</a></li><li><a href="/blog/content-marketing-agency-south-africa.html">Content Marketing</a></li><li><a href="/blog/web-design-south-africa.html">Website Design</a></li><li><a href="/blog/branding-agency-south-africa.html">Branding &amp; Identity</a></li><li class="nm-dd-all"><a href="/services.html">All services →</a></li></ul></li>
+    <li><a href="/work.html">Work</a></li>
+    <li><a href="/blog/">Blog</a></li>
+    <li><a href="/contact.html">Contact</a></li>
+    <li><a href="/free-audit.html" class="nm-audit">Free Audit</a></li>
+    <li><a href="tel:+27786975931">078 697 5931</a></li>
+  </ul>
+</div>
 <header class="hero">
   <div class="hero-inner">
     <p class="hero-eyebrow">SEO</p>
@@ -126,7 +143,7 @@ if(ham)ham.addEventListener('click',function(){var o=nav.classList.toggle('open'
 <p>Earning high-quality backlinks from reputable South African and international websites. Links remain one of the strongest ranking signals. Ethical link building involves digital PR, content partnerships, directory listings and supplier/client mentions — not buying links, which violates Google's guidelines and risks a manual penalty.</p>
 
 <h2>SEO Consultant Fees in South Africa (2026)</h2>
-<table>
+<div style="overflow-x:auto"><table>
 <thead><tr><th>Service Model</th><th>Typical Cost</th></tr></thead>
 <tbody>
 <tr><td>One-off audit</td><td>R5,000–R20,000</td></tr>
@@ -134,7 +151,7 @@ if(ham)ham.addEventListener('click',function(){var o=nav.classList.toggle('open'
 <tr><td>Project-based (site migration, penalty recovery)</td><td>R15,000–R60,000</td></tr>
 <tr><td>Hourly consulting</td><td>R800–R2,500/hour</td></tr>
 </tbody>
-</table>
+</table></div>
 <p>Be very wary of SEO packages under R3,000/month. At that price point, there isn't enough time to do meaningful work, and the service often involves low-quality link building that creates future problems.</p>
 
 <h2>Questions to Ask Before Hiring an SEO Consultant</h2>
@@ -173,5 +190,6 @@ if(ham)ham.addEventListener('click',function(){var o=nav.classList.toggle('open'
   </div>
 </div>
 </main>
+<script src="/js/nav.js" defer></script>
 </body>
 </html>
