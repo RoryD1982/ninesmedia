@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Google Ads Conversion Tracking: Calls, Forms and WhatsApp</title>
+  <meta name="description" content="How to set up Google Ads conversion tracking for South African businesses: tracking forms, phone calls and WhatsApp clicks, GA4 imports, Tag Manager, consent and common mistakes." />
+  <meta name="author" content="Brandon Howard" />
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />
+  <link rel="canonical" href="https://www.ninesmedia.com/blog/google-ads-conversion-tracking-setup.html" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://www.ninesmedia.com/blog/google-ads-conversion-tracking-setup.html" />
+  <meta property="og:title" content="Google Ads Conversion Tracking: Calls, Forms and WhatsApp" />
+  <meta property="og:description" content="How to set up Google Ads conversion tracking for South African businesses: tracking forms, phone calls and WhatsApp clicks, GA4 imports, Tag Manager, consent and common mistakes." />
+  <meta property="og:image" content="https://www.ninesmedia.com/images/og-image.jpg" />
+  <meta property="og:site_name" content="Nines Media" />
+  <meta property="og:locale" content="en_ZA" />
+  <link rel="icon" type="image/png" href="../images/favicon.png" />
+  <script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "BlogPosting",
+   "headline": "Google Ads Conversion Tracking: How to Track Calls, Forms and WhatsApp",
+   "description": "How to set up Google Ads conversion tracking for South African businesses: tracking forms, phone calls and WhatsApp clicks, GA4 imports, Tag Manager, consent and common mistakes.",
+   "url": "https://www.ninesmedia.com/blog/google-ads-conversion-tracking-setup.html",
+   "mainEntityOfPage": "https://www.ninesmedia.com/blog/google-ads-conversion-tracking-setup.html",
+   "datePublished": "2026-11-03",
+   "dateModified": "2026-11-03",
+   "inLanguage": "en-ZA",
+   "image": "https://www.ninesmedia.com/images/og-image.jpg",
+   "author": {
+    "@type": "Person",
+    "@id": "https://www.ninesmedia.com/team/brandon-howard.html#person",
+    "name": "Brandon Howard",
+    "url": "https://www.ninesmedia.com/team/brandon-howard.html",
+    "jobTitle": "Head of Strategy",
+    "image": "https://www.ninesmedia.com/images/team/brandon-howard.jpg",
+    "sameAs": [
+     "https://www.linkedin.com/in/brandon-howard-54b022397/"
+    ]
+   },
+   "publisher": {
+    "@type": "Organization",
+    "@id": "https://www.ninesmedia.com/#organization",
+    "name": "Nines Media",
+    "logo": {
+     "@type": "ImageObject",
+     "url": "https://www.ninesmedia.com/images/logo-dark.png"
+    }
+   }
+  },
+  {
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Why is conversion tracking important in Google Ads?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "It lets Google's bidding optimise for real enquiries and sales, and lets you calculate your cost per lead and return on ad spend. Without it, you're judging campaigns on clicks."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Can Google Ads track WhatsApp leads?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. You can track clicks on WhatsApp buttons and wa.me links as conversions using Google Tag Manager or GA4 events."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Should I import conversions from GA4 or use the Google Ads tag?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Either works. The important thing is not to count the same action twice, and to make sure the primary conversion is a genuine lead or sale."
+     }
+    }
+   ]
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Home",
+     "item": "https://www.ninesmedia.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Blog",
+     "item": "https://www.ninesmedia.com/blog/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "Google Ads Conversion Tracking: How to Track Calls, Forms and WhatsApp",
+     "item": "https://www.ninesmedia.com/blog/google-ads-conversion-tracking-setup.html"
+    }
+   ]
+  }
+ ]
+}
+  </script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Barlow+Condensed:wght@500;600;700&display=swap" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <style>
+    :root{--accent:#FF2D6B;--off-white:#F8F8F6;--border:#E8E8E5;--muted:#6B6B6B;--text:#1A1A1A}
+    .article-hero{padding:8rem 0 4rem;background:var(--off-white);border-bottom:1px solid var(--border)}
+    .article-hero .section-inner{max-width:800px;margin:0 auto;padding:0 1.5rem}
+    .article-cat{display:inline-block;background:var(--accent);color:#fff;font-family:'Barlow Condensed',sans-serif;font-size:.75rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:.3rem .85rem;border-radius:50px;margin-bottom:1.25rem}
+    .article-hero h1{font-family:'Barlow Condensed',sans-serif;font-size:clamp(2rem,5vw,3rem);font-weight:700;line-height:1.12;color:var(--text);margin:0 0 1.25rem;text-wrap:balance}
+    .article-meta{font-size:.85rem;color:var(--muted);display:flex;flex-wrap:wrap;gap:.4rem 1rem;align-items:center}
+    .article-meta span::before{content:'·';margin-right:1rem}
+    .article-meta span:first-child::before{content:'';margin:0}
+    .article-body{max-width:800px;margin:0 auto;padding:4rem 1.5rem;line-height:1.8;color:var(--text);font-size:1.0625rem}
+    .article-body h2{font-family:'Barlow Condensed',sans-serif;font-size:1.7rem;font-weight:700;margin:2.5rem 0 .9rem;color:var(--text);text-wrap:balance}
+    .article-body h3{font-family:'Barlow Condensed',sans-serif;font-size:1.25rem;font-weight:600;margin:2rem 0 .6rem;color:var(--text)}
+    .article-body p{margin:0 0 1.3rem}
+    .article-body strong{font-weight:600}
+    .article-body ul,.article-body ol{padding-left:1.5rem;margin:0 0 1.3rem}
+    .article-body li{margin-bottom:.5rem}
+    .article-body blockquote{border-left:3px solid var(--accent);margin:2rem 0;padding:.75rem 1.5rem;background:var(--off-white);font-style:italic;color:#333;border-radius:0 4px 4px 0}
+    .author-box{max-width:800px;margin:0 auto;padding:2rem 1.5rem;border-top:1px solid var(--border);display:flex;align-items:flex-start;gap:1rem}
+    .author-avatar{width:48px;height:48px;border-radius:50%;background:var(--accent);display:flex;align-items:center;justify-content:center;color:#fff;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:1.1rem;flex-shrink:0}
+    .author-info{font-size:.9rem;color:var(--muted);line-height:1.6}
+    .author-info strong{color:var(--text);display:block;margin-bottom:.2rem}
+    .article-cta{background:var(--accent);color:#fff;text-align:center;padding:3rem 2rem;border-radius:12px;max-width:800px;margin:0 auto 3rem}
+    .article-cta h3{font-family:'Barlow Condensed',sans-serif;font-size:1.75rem;font-weight:700;margin:0 0 .75rem}
+    .article-cta p{margin:0 0 1.5rem;opacity:.9;font-size:1rem}
+    .article-cta a{display:inline-block;background:#fff;color:var(--accent);font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:.9rem;letter-spacing:.08em;text-transform:uppercase;text-decoration:none;padding:.8rem 2rem;border-radius:4px;transition:opacity .2s}
+    .article-cta a:hover{opacity:.9}
+    .more-articles{max-width:800px;margin:0 auto;padding:2rem 1.5rem 4rem}
+    .more-articles h3{font-family:'Barlow Condensed',sans-serif;font-size:1.3rem;font-weight:700;margin:0 0 1.25rem;color:var(--text)}
+    .more-articles-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem}
+    .more-card{border:1px solid var(--border);border-radius:8px;padding:1.25rem;text-decoration:none;color:var(--text);transition:border-color .2s,box-shadow .2s;display:block}
+    .more-card:hover{border-color:var(--accent);box-shadow:0 2px 12px rgba(255,45,107,.1)}
+    .more-card-cat{font-size:.7rem;font-family:'Barlow Condensed',sans-serif;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);margin-bottom:.5rem}
+    .more-card h4{font-family:'Barlow Condensed',sans-serif;font-size:1.1rem;font-weight:600;margin:0 0 .4rem;line-height:1.25}
+    .more-card p{font-size:.82rem;color:var(--muted);margin:0;line-height:1.5}
+    .back-to-blog{display:inline-block;margin-top:1.25rem;font-size:.85rem;color:var(--accent);text-decoration:none;font-weight:500}
+    .back-to-blog:hover{text-decoration:underline}
+    .article-wrap{padding:0 0 2rem}
+    .data-table{width:100%;border-collapse:collapse;margin:1.5rem 0;font-size:.95rem}
+    .data-table th{background:var(--off-white);font-family:'Barlow Condensed',sans-serif;font-weight:700;text-align:left;padding:.75rem 1rem;border-bottom:2px solid var(--border)}
+    .data-table td{padding:.7rem 1rem;border-bottom:1px solid var(--border)}
+    .data-table tr:last-child td{border-bottom:none}
+  
+    .crumbs{font-size:.8rem;color:var(--muted);margin-bottom:1rem}
+    .crumbs a{color:var(--muted);text-decoration:none}
+    .key-takeaways{border:1px solid var(--border);border-left:4px solid var(--accent);border-radius:0 8px 8px 0;padding:1.25rem 1.5rem;margin:0 0 2rem;background:var(--off-white)}
+    .key-takeaways strong.kt{display:block;font-family:'Barlow Condensed',sans-serif;font-size:1.05rem;letter-spacing:.06em;text-transform:uppercase;margin-bottom:.5rem}
+    .key-takeaways ul{margin:0!important}
+    .faq details{border-bottom:1px solid var(--border);padding:.9rem 0}
+    .faq summary{cursor:pointer;font-weight:600;list-style:none}
+    .faq summary::-webkit-details-marker{display:none}
+    .faq summary::after{content:'+';float:right;color:var(--accent);font-weight:700}
+    .faq details[open] summary::after{content:'–'}
+    .faq details p{margin:.6rem 0 0!important}
+    .data-wrap{overflow-x:auto;margin:1.25rem 0 1.5rem}
+    .article-body table{width:100%;border-collapse:collapse;font-size:.95rem}
+    .article-body th{background:var(--off-white);font-family:'Barlow Condensed',sans-serif;font-weight:700;text-align:left;padding:.7rem .9rem;border-bottom:2px solid var(--border)}
+    .article-body td{padding:.65rem .9rem;border-bottom:1px solid var(--border);vertical-align:top}
+    .checklist{list-style:none;padding-left:0!important}
+    .checklist li{padding-left:1.6rem;position:relative}
+    .checklist li::before{content:'✓';position:absolute;left:0;color:var(--accent);font-weight:700}
+  </style>
+<style id="nm-dd-css">
+.nm-dd{position:relative}
+.nm-dd>a .nm-caret{font-size:.7em;margin-left:.35em;display:inline-block}
+.nm-dd::after{content:"";position:absolute;left:0;right:0;top:100%;height:16px}
+.nm-dd-menu{display:none;list-style:none;margin:0;padding:.5rem 0;position:absolute;top:calc(100% + 14px);left:-1rem;min-width:250px;background:#fff;border:1px solid #e8e8e4;box-shadow:0 10px 30px rgba(0,0,0,.10);z-index:1000;flex-direction:column;gap:0}
+.nm-dd:hover .nm-dd-menu,.nm-dd:focus-within .nm-dd-menu{display:flex}
+.nm-dd-menu li{margin:0;padding:0;list-style:none}
+.nm-dd-menu a{display:block;padding:.6rem 1.1rem;white-space:nowrap;color:#1a1a1a!important;text-transform:none!important;letter-spacing:0!important;font-size:.88rem!important;font-weight:500;text-decoration:none!important;background:none!important;border-radius:0!important}
+.nm-dd-menu a::after{display:none!important}
+.nm-dd-menu a:hover{background:#f5f5f3!important;color:#000!important}
+.nm-dd-menu .nm-dd-all{border-top:1px solid #eee;margin-top:.35rem;padding-top:.35rem}
+.nav-links.open .nm-dd-menu{display:flex;position:static;box-shadow:none;border:0;padding:.25rem 0 0 1rem;min-width:0;background:transparent}
+.nav-links.open .nm-dd-menu a{color:inherit!important;padding:.35rem 0}
+.nm-mobile-sub{list-style:none;margin:.4rem 0 .2rem;padding:0 0 0 1rem!important;display:flex;flex-direction:column;gap:.15rem}
+.nm-mobile-sub li{border:0!important;padding:0!important;margin:0!important}
+.nm-mobile-sub a{font-size:.85rem!important;opacity:.8;padding:.3rem 0!important;text-transform:none!important;letter-spacing:0!important;display:block}
+</style>
+<link rel="stylesheet" href="/css/nav.css" />
+</head>
+<body>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TT1EQH7Q8V"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-TT1EQH7Q8V');
+</script>
+<nav class="nm-nav" aria-label="Main">
+  <div class="nm-inner">
+    <a class="nm-logo" href="/"><img src="/images/logo-header.svg" alt="Nines Media" width="150" height="52" fetchpriority="high" decoding="sync"></a>
+    <ul class="nm-links">
+      <li><a href="/">Home</a></li>
+      <li><a href="/about.html">About</a></li>
+      <li class="nm-dd"><a href="/services.html" aria-haspopup="true">Services<span class="nm-caret" aria-hidden="true">▾</span></a><ul class="nm-dd-menu"><li><a href="/blog/google-ads-agency-south-africa.html">Google Ads Management</a></li><li><a href="/blog/ppc-management-south-africa.html">PPC Management</a></li><li><a href="/blog/facebook-ads-agency-south-africa.html">Facebook &amp; Meta Ads</a></li><li><a href="/blog/social-media-management-south-africa.html">Social Media Management</a></li><li><a href="/blog/seo-agency-south-africa.html">SEO</a></li><li><a href="/blog/content-marketing-agency-south-africa.html">Content Marketing</a></li><li><a href="/blog/web-design-south-africa.html">Website Design</a></li><li><a href="/blog/branding-agency-south-africa.html">Branding &amp; Identity</a></li><li class="nm-dd-all"><a href="/services.html">All services →</a></li></ul></li>
+      <li><a href="/work.html">Work</a></li>
+      <li><a href="/blog/" class="active" aria-current="page">Blog</a></li>
+      <li><a href="/free-audit.html" class="nm-audit">Free Audit</a></li>
+    </ul>
+    <a href="tel:+27786975931" class="nm-phone">078 697 5931</a>
+    <a href="/contact.html" class="nm-cta">Get in touch</a>
+    <button class="nm-burger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="nm-mobile">
+  <ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="/about.html">About</a></li>
+    <li><a href="/services.html">Services</a><ul class="nm-mobile-sub"><li><a href="/blog/google-ads-agency-south-africa.html">Google Ads Management</a></li><li><a href="/blog/ppc-management-south-africa.html">PPC Management</a></li><li><a href="/blog/facebook-ads-agency-south-africa.html">Facebook &amp; Meta Ads</a></li><li><a href="/blog/social-media-management-south-africa.html">Social Media Management</a></li><li><a href="/blog/seo-agency-south-africa.html">SEO</a></li><li><a href="/blog/content-marketing-agency-south-africa.html">Content Marketing</a></li><li><a href="/blog/web-design-south-africa.html">Website Design</a></li><li><a href="/blog/branding-agency-south-africa.html">Branding &amp; Identity</a></li><li class="nm-dd-all"><a href="/services.html">All services →</a></li></ul></li>
+    <li><a href="/work.html">Work</a></li>
+    <li><a href="/blog/">Blog</a></li>
+    <li><a href="/contact.html">Contact</a></li>
+    <li><a href="/free-audit.html" class="nm-audit">Free Audit</a></li>
+    <li><a href="tel:+27786975931">078 697 5931</a></li>
+  </ul>
+</div>
+<main class="article-wrap">
+  <header class="article-hero">
+    <div class="section-inner">
+      <p class="crumbs"><a href="/">Home</a> / <a href="/blog/">Blog</a> / Google Ads</p>
+      <span class="article-cat">Google Ads</span>
+      <h1>Google Ads Conversion Tracking: How to Track Calls, Forms and WhatsApp</h1>
+      <div class="article-meta">
+        <span>By <a href="/team/brandon-howard.html" rel="author" style="color:inherit;text-decoration:underline">Brandon Howard</a></span>
+        <span><time datetime="2026-11-03">3 November 2026</time></span>
+        <span>4 min read</span>
+      </div>
+    </div>
+  </header>
+  <div class="article-body">
+    <div class="key-takeaways"><strong class="kt">Key takeaways</strong><ul><li>Without accurate conversion tracking, Google Ads can't optimise for real enquiries — and you can't judge results.</li><li>Track all three ways South African customers get in touch: forms, calls and WhatsApp.</li><li>Only count genuine actions: a submitted form, not a button click.</li></ul></div>
+<p>Conversion tracking tells Google Ads which clicks turned into enquiries or sales. It's the foundation of every successful campaign: it lets automated bidding find more people like your customers, and it lets you see your real cost per lead. Yet many South African accounts we review track nothing, or track the wrong thing.</p>
+
+    <h2>What to Track</h2>
+    <div class="data-wrap"><table>
+      <thead><tr><th>Action</th><th>How to track it</th></tr></thead>
+      <tbody>
+        <tr><td>Form submissions</td><td>Thank-you page visit, or a confirmed form-submit event via Google Tag Manager</td></tr>
+        <tr><td>Calls from ads</td><td>Call assets with Google forwarding numbers (where available) or call reporting</td></tr>
+        <tr><td>Calls from your website</td><td>Phone number click events on mobile; call tracking software for full accuracy</td></tr>
+        <tr><td>WhatsApp clicks</td><td>Click events on wa.me links or WhatsApp buttons</td></tr>
+        <tr><td>Purchases</td><td>E-commerce purchase tag with transaction value</td></tr>
+      </tbody>
+    </table></div>
+
+    <h2>Step-by-Step Setup</h2>
+    <ol>
+      <li><strong>Install Google Tag Manager</strong> on every page of your site. It lets you add and change tracking without editing code each time.</li>
+      <li><strong>Connect Google Analytics 4</strong> and mark your important actions as key events. See our <a href="/blog/google-analytics-south-africa.html">GA4 guide</a>.</li>
+      <li><strong>Create conversion actions in Google Ads</strong> — either directly with the Google Ads tag, or by importing GA4 key events.</li>
+      <li><strong>Set up form tracking</strong> on a confirmed submission. If your form shows a thank-you message without changing page, use a form-submit trigger or a dedicated event.</li>
+      <li><strong>Track phone and WhatsApp clicks</strong> with click triggers on tel: and wa.me links.</li>
+      <li><strong>Choose primary conversions</strong> — the actions bidding should optimise for. Keep minor actions (like brochure downloads) as secondary.</li>
+      <li><strong>Test everything</strong> with Tag Assistant and a real test enquiry before launching.</li>
+    </ol>
+
+    <h2>Common Tracking Mistakes</h2>
+    <ul>
+      <li><strong>Counting button clicks as leads</strong>, including failed or empty submissions.</li>
+      <li><strong>Double counting</strong> the same conversion from both the Google Ads tag and a GA4 import.</li>
+      <li><strong>Making page views a primary conversion</strong>, which teaches Google to find browsers, not buyers.</li>
+      <li><strong>Ignoring calls</strong> in industries where most leads phone in.</li>
+      <li><strong>Never checking the numbers</strong> against what your team actually receives.</li>
+    </ul>
+
+    <h2>Going Further: Lead Quality</h2>
+    <p>Once basic tracking works, feed back what happened next. Importing qualified leads or sales from your CRM (offline conversion import) helps Google optimise for customers, not just form fills — particularly important for Performance Max and broad match.</p>
+
+    <h2>Consent and POPIA</h2>
+    <p>Tracking collects personal information, so explain it in your privacy notice and respect visitors' choices. Google's Consent Mode lets tags adjust their behaviour based on consent. See <a href="/blog/popia-marketing-compliance.html">POPIA and marketing</a>.</p>
+    <p>Every Nines Media campaign starts with tracking set up and tested. If you're not sure yours is right, our <a href="/free-audit.html">free audit</a> will tell you.</p>
+
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq">
+      <details><summary>Why is conversion tracking important in Google Ads?</summary><p>It lets Google's bidding optimise for real enquiries and sales, and lets you calculate your cost per lead and return on ad spend. Without it, you're judging campaigns on clicks.</p></details>
+      <details><summary>Can Google Ads track WhatsApp leads?</summary><p>Yes. You can track clicks on WhatsApp buttons and wa.me links as conversions using Google Tag Manager or GA4 events.</p></details>
+      <details><summary>Should I import conversions from GA4 or use the Google Ads tag?</summary><p>Either works. The important thing is not to count the same action twice, and to make sure the primary conversion is a genuine lead or sale.</p></details>
+    </div>
+  </div>
+  <div class="author-box">
+    <img class="author-avatar" src="/images/team/brandon-howard-160.jpg" alt="Brandon Howard" width="48" height="48" loading="lazy" style="object-fit:cover;padding:0">
+    <div class="author-info">
+      <strong><a href="/team/brandon-howard.html" style="color:inherit">Brandon Howard</a></strong>
+      Brandon Howard is Head of Strategy at Nines Media, a certified Google &amp; Meta Partner digital marketing agency in Johannesburg. He plans and manages Google Ads, Meta advertising and SEO for South African businesses. <a href="/team/brandon-howard.html">More about Brandon</a> · <a href="https://www.linkedin.com/in/brandon-howard-54b022397/" rel="noopener" target="_blank">LinkedIn</a>
+    </div>
+  </div>
+  <div class="article-cta">
+    <h3>Want a Second Opinion on Your Marketing?</h3>
+    <p>Get a free digital marketing audit — a senior strategist reviews your ads, website and competitors and sends a written report. No obligation.</p>
+    <a href="/free-audit.html">Get Your Free Audit</a>
+  </div>
+  <div class="more-articles">
+    <h3>Related Reading</h3>
+    <div class="more-articles-grid">
+  <a class="more-card" href="/blog/google-analytics-south-africa.html">
+    <div class="more-card-cat">Related</div>
+    <h4>Google Analytics for South African Businesses: A Setup and Use Guide</h4>
+  </a>
+  <a class="more-card" href="/blog/google-ads-lead-generation-south-africa.html">
+    <div class="more-card-cat">Related</div>
+    <h4>How to Get Leads from Google Ads in South Africa: A Practical Playbook</h4>
+  </a>
+  <a class="more-card" href="/blog/measure-digital-marketing-roi.html">
+    <div class="more-card-cat">Related</div>
+    <h4>How to Measure Digital Marketing ROI: A Guide for South African Business Owners</h4>
+  </a>
+    </div>
+    <a class="back-to-blog" href="/blog/">← Back to Blog</a>
+  </div>
+</main>
+<script src="/js/nav.js" defer></script>
+</body>
+</html>
