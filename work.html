@@ -156,18 +156,25 @@
     @media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .cs-body h2{color:#eee}:root:not([data-theme="light"]) .cs-body p,:root:not([data-theme="light"]) .cs-body li{color:#bbb}:root:not([data-theme="light"]) .cs-tags span{color:#bbb;border-color:#333}}
 </style>
 <style>
-.mc-grid{display:grid;align-items:start;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:1.5rem;margin-top:2rem}
-.mc-card{border:1px solid #e4e4de;border-radius:6px;padding:1.75rem;background:#fff;display:flex;flex-direction:column}
-.mc-who{font-size:.75rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#FF2D6B;margin:0 0 .6rem}.mc-who span{color:#888;font-weight:600;letter-spacing:.06em}
-.mc-card h3{font-family:var(--font-display);font-size:1.6rem;line-height:1.15;font-weight:700;color:var(--black);margin:0 0 1.25rem}
-.mc-stats{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:1.25rem}
-.mc-stat b{display:block;font-family:var(--font-display);font-size:2rem;font-weight:800;color:var(--black);line-height:1}
-.mc-stat span{display:block;font-size:.8rem;color:#777;margin-top:.3rem;line-height:1.4}
-.mc-card details{margin-top:auto;border-top:1px solid #eee;padding-top:1rem}
-.mc-card summary{cursor:pointer;font-weight:600;font-size:.9rem;color:var(--black)}
-.mc-card details p{color:#444;line-height:1.7;font-size:.95rem;margin:.9rem 0 0}
-.mc-card .mc-ev{font-weight:600;color:var(--black)}
-@media(max-width:480px){.mc-stat b{font-size:1.5rem}.mc-card{padding:1.35rem}}
+.wk-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,330px),1fr));gap:1.25rem;margin-top:2rem}
+.wk-tile{position:relative;display:flex;flex-direction:column;min-height:300px;padding:1.75rem;border-radius:6px;background:#0d0d0d;color:#fff;text-decoration:none;overflow:hidden;transition:transform .25s ease,box-shadow .25s ease}
+.wk-tile:before{content:"";position:absolute;left:0;top:0;height:4px;width:0;background:#FF2D6B;transition:width .35s ease}
+.wk-tile:hover{transform:translateY(-4px);box-shadow:0 14px 34px rgba(0,0,0,.18)}.wk-tile:hover:before{width:100%}
+.wk-ind{font-size:.72rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#FF2D6B;margin:0 0 1.25rem}
+.wk-stat{font-family:var(--font-display);font-weight:800;font-size:clamp(2.4rem,5vw,3.2rem);line-height:1;margin:0}
+.wk-stat-l{font-size:.8rem;color:#999;margin:.4rem 0 1.25rem}
+.wk-h{font-family:var(--font-display);font-size:1.35rem;font-weight:700;line-height:1.2;margin:0 0 1rem;color:#fff}
+.wk-tags{font-size:.75rem;color:#888;margin:auto 0 0}
+.wk-go{display:flex;justify-content:space-between;align-items:center;border-top:1px solid #262626;margin-top:1rem;padding-top:1rem;font-size:.85rem;font-weight:600}
+.wk-go i{font-style:normal;color:#FF2D6B;transition:transform .25s ease}.wk-tile:hover .wk-go i{transform:translateX(4px)}
+.wk-tile.feat{background:#FF2D6B}.wk-tile.feat .wk-ind,.wk-tile.feat .wk-go i{color:#fff}.wk-tile.feat .wk-stat-l,.wk-tile.feat .wk-tags{color:rgba(255,255,255,.8)}.wk-tile.feat .wk-go{border-color:rgba(255,255,255,.3)}.wk-tile.feat:before{background:#0d0d0d}
+.wk-tile.concept{background:#fff;color:var(--black);border:1px solid #e4e4de;min-height:240px}
+.wk-tile.concept .wk-h{color:var(--black);font-size:1.6rem}.wk-tile.concept .wk-go{border-color:#eee}
+.wk-badge{display:inline-block;font-size:.65rem;letter-spacing:.12em;text-transform:uppercase;font-weight:700;color:#777;border:1px solid #ccc;border-radius:999px;padding:.2rem .55rem;margin-bottom:1rem;align-self:flex-start}
+.wk-grid.c4{grid-template-columns:repeat(auto-fill,minmax(min(100%,250px),1fr))}
+.wk-note{color:#666;line-height:1.7;max-width:680px}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .wk-tile.concept{background:#111;border-color:#222;color:#eee}:root:not([data-theme="light"]) .wk-tile.concept .wk-h{color:#eee}}
+@media (prefers-reduced-motion: reduce){.wk-tile,.wk-tile:before,.wk-go i{transition:none}}
 </style>
 </head>
 <body>
@@ -210,394 +217,100 @@
     <div class="section-inner">
       <p class="section-label">Selected Projects</p>
       <h1 class="section-title" style="font-size: clamp(3rem, 8vw, 6rem);">Our<br/>Work</h1>
-      <p class="section-subtitle">Real client results across insurance, finance, property, SaaS, betting and legal services, followed by concept work showing how we approach a brief. Client names are withheld; the concept brands are fictional.</p>
+      <p class="section-subtitle">Real client results across insurance, finance, property, software, sports betting and legal services, plus concept work showing how we approach a brief. Pick a tile to read the full story.</p>
     </div>
   </section>
 
   <!-- ── CASE STUDY 1: APEX CAPITAL ── -->
   <section class="section" aria-label="Client results">
-    <div class="section-inner cs-wrap cs-body">
-      <p class="section-label">Client Results · Insurance</p>
-      <h2 class="section-title" style="margin-bottom:.75rem">+1,000% More Leads for a<br/>South African Insurer.</h2>
-      <p style="color:#555;line-height:1.7;max-width:640px">Real client work, anonymised at the client's request. Google Ads, Meta ads, landing pages and lead tracking delivered a 1,000% increase in leads and a 30-percentage-point higher closing ratio within six months.</p>
-
-      <div class="cs-results" data-cs-anim>
-        <p class="lbl">Results within six months</p>
-        <div class="cs-kpis">
-          <div class="cs-kpi">
-            <div class="num" data-to="1000" data-prefix="+" data-suffix="%">+1,000%</div>
-            <p class="cap">increase in monthly leads</p>
-            <div class="bars" aria-hidden="true">
-              <div class="bar"><i data-h="9"></i><b>Before</b></div>
-              <div class="bar after"><i data-h="99"></i><b>After 6 months</b></div>
-            </div>
-          </div>
-          <div class="cs-kpi">
-            <div class="num" data-to="30" data-prefix="+" data-suffix=" pts">+30 pts</div>
-            <p class="cap">improvement in closing ratio (percentage points)</p>
-            <div class="gauge" aria-hidden="true">
-              <p class="note">More of the leads became paying policyholders, because the campaigns and forms brought in better-qualified prospects.</p>
-              <div class="track"><div class="fill" data-w="100"></div></div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <p style="margin:0"><a href="/work/insurance-lead-generation-case-study.html" class="btn-primary">Read the full case study</a></p>
-    </div>
-  </section>
-
-  <section class="section section-alt" aria-label="More client work">
     <div class="section-inner">
-      <p class="section-label">More Client Work</p>
-      <h2 class="section-title">Five More Briefs, Anonymised.</h2>
-      <p style="color:#555;line-height:1.7;max-width:680px">Real client work, with names removed at our clients' request. Each case shows the objective, the decision that mattered most, and the evidence we can stand behind. Media spend, budgets and agency fees are shown separately.</p>
-      <div class="mc-grid">
-      <article class="mc-card" id="case-1">
-        <p class="mc-who">Debt counselling provider <span>· Lead generation · Reporting</span></p>
-        <h3>838 completed applications at approximately R144 each</h3>
-        <div class="mc-stats"><div class="mc-stat"><b>838</b><span>completed applications in one month</span></div><div class="mc-stat"><b>≈R144</b><span>media spend per application</span></div></div>
-        <details><summary>Read the case study</summary><p>The debt counselling provider wanted completed applications, while still giving prospective customers the option to enquire by WhatsApp or phone.</p><p>Our most important decision was to report completed applications, WhatsApp activity and calls separately. Someone asking a first question is at a different stage from someone who finishes an application. Keeping the two apart gave the client a meaningful figure for reviewing media efficiency: the cost of each completed application. The same monthly report recorded 3,485 WhatsApp interactions and 125 calls. Because these may overlap, we reported them as separate activity rather than adding them to the result.</p><p class="mc-ev">The headline result: in one month, R120,270 in media spend produced 838 completed applications, approximately R143.52 per application.</p></details>
-      </article>
-      <article class="mc-card" id="case-2">
-        <p class="mc-who">Residential property developer <span>· Social media · Creative</span></p>
-        <h3>Giving buyers a clear reason to book a viewing</h3>
-        <div class="mc-stats"><div class="mc-stat"><b>2</b><span>developments, each with its own offer</span></div><div class="mc-stat"><b>R8,000</b><span>monthly agency retainer</span></div></div>
-        <details><summary>Read the case study</summary><p>The residential property developer wanted viewing enquiries across two affordable housing developments during Black Friday. Each development carried a different offer, so buyers needed to see quickly which one suited them.</p><p>Our key decision was to keep the offers distinct. We built a social carousel that placed the two side by side, then wrote individual posts for each development. One led with a limited number of homes at R680,000 and a R30,000 saving. The other promoted homes from R789,000 with a large-format floor tile upgrade. For the first development, we added a second creative angle built around a Saturday on the estate. It connected the jogging track, sports facilities and braai areas to the invitation to book a viewing.</p><p class="mc-ev">The evidence is the creative work itself, delivered on an R8,000 monthly agency retainer.</p></details>
-      </article>
-      <article class="mc-card" id="case-3">
-        <p class="mc-who">B2B project management platform <span>· Google Ads · LinkedIn · Facebook</span></p>
-        <h3>111 sign-ups revealed where the acquisition strategy needed to change</h3>
-        <div class="mc-stats"><div class="mc-stat"><b>111</b><span>sign-ups tracked against purchases</span></div><div class="mc-stat"><b>R20,000</b><span>proposed next-phase media budget</span></div></div>
-        <details><summary>Read the case study</summary><p>The B2B project management platform needed paying subscribers. Registrations were the first measurable step, but paid subscriptions were the commercial goal. The original monthly media plan was R29,000: R25,000 for Google Ads and R2,000 each for Facebook and LinkedIn.</p><p>Our most important decision was to track purchases alongside sign-ups, not sign-ups alone. By the reporting checkpoint, the platform had recorded 111 sign-ups and zero purchases. That finding changed our recommendation. We proposed capping the next phase at R20,000, split equally between Google Search and LinkedIn. The aim was to test whether search intent or professional targeting brought in prospects more likely to buy. This was a proposal, and its results were not measured.</p><p class="mc-ev">The evidence is the diagnosis itself: 111 sign-ups with no purchases showed where the acquisition strategy needed to change.</p></details>
-      </article>
-      <article class="mc-card" id="case-4">
-        <p class="mc-who">South African sportsbook <span>· Social media · Content</span></p>
-        <h3>A different job for every match-day post</h3>
-        <div class="mc-stats"><div class="mc-stat"><b>10</b><span>social posts in one content batch</span></div><div class="mc-stat"><b>4 + 6</b><span>offers and sporting events covered</span></div></div>
-        <details><summary>Read the case study</summary><p>The South African sportsbook wanted adult sports fans to understand its promotions, and to have a reason to engage with its weekly fixture content.</p><p>Our key decision was to match each promotion to a sporting moment rather than present offers in isolation. Football posts explained how an eligible bet could pay out when a team reached the qualifying lead. Rugby posts paired local kick-off times with a console giveaway. We developed separate creative for early cash out, sports cashback and referrals, giving each offer its own headline and visual treatment. Match questions such as “Who scores first?” gave fans a reason to respond beyond the promotion itself.</p><p class="mc-ev">The evidence is the work: one content batch of ten social posts, covering four standalone offers and six sporting events or fixture roundups. We delivered it on an R10,000 monthly agency retainer.</p></details>
-      </article>
-      <article class="mc-card" id="case-5">
-        <p class="mc-who">US online legal service <span>· Paid media · Acquisition</span></p>
-        <h3>What did it cost to acquire a paying customer?</h3>
-        <div class="mc-stats"><div class="mc-stat"><b>US$32–54</b><span>reported cost per sale</span></div><div class="mc-stat"><b>Per sale</b><span>the measure we used to judge acquisition</span></div></div>
-        <details><summary>Read the case study</summary><p>The US online legal service wanted paying customers for its traffic-ticket service, with acquisition costs assessed in US dollars.</p><p>Our most important decision was to judge performance on cost per sale. Customers could buy the service online, so this measure answered a practical question directly: how much advertising spend was associated with each sale? We presented the result as a range across reporting periods, giving the client a realistic view rather than a single best-case figure. Cost per sale is an acquisition measure. Judging profitability would also need revenue and margin data, which sit outside this case.</p><p class="mc-ev">Across the reporting periods, the reported cost of acquiring a paying customer ranged from US$32 to US$54 per sale.</p></details>
-      </article>
+      <p class="section-label">Client Results</p>
+      <h2 class="section-title">Real Briefs. Real Numbers.</h2>
+      <p class="wk-note">Client names are withheld at our clients' request. Each case shows the objective, the decision that mattered most and the evidence we can stand behind.</p>
+      <div class="wk-grid">
+      <a class="wk-tile feat" href="/work/insurance-lead-generation-case-study.html">
+        <p class="wk-ind">Insurance</p>
+        <p class="wk-stat">+1,000%</p><p class="wk-stat-l">more leads in six months</p>
+        <p class="wk-h">Closing ratio up 30 percentage points</p>
+        <p class="wk-tags">Google Ads · Meta ads · Landing pages · CRM</p>
+        <span class="wk-go">View case study <i>→</i></span>
+      </a>
+      <a class="wk-tile " href="/work/debt-counselling-lead-generation-case-study.html">
+        <p class="wk-ind">Debt counselling</p>
+        <p class="wk-stat">838</p><p class="wk-stat-l">completed applications in one month</p>
+        <p class="wk-h">838 completed applications at approximately R144 each</p>
+        <p class="wk-tags">Lead generation · Paid media · Reporting</p>
+        <span class="wk-go">View case study <i>→</i></span>
+      </a>
+      <a class="wk-tile " href="/work/property-developer-social-media-case-study.html">
+        <p class="wk-ind">Property development</p>
+        <p class="wk-stat">2</p><p class="wk-stat-l">developments, each with a distinct offer</p>
+        <p class="wk-h">Giving buyers a clear reason to book a viewing</p>
+        <p class="wk-tags">Social media · Creative · Campaign</p>
+        <span class="wk-go">View case study <i>→</i></span>
+      </a>
+      <a class="wk-tile " href="/work/b2b-saas-acquisition-case-study.html">
+        <p class="wk-ind">B2B software</p>
+        <p class="wk-stat">111</p><p class="wk-stat-l">sign-ups at the reporting checkpoint</p>
+        <p class="wk-h">111 sign-ups revealed where the acquisition strategy needed to change</p>
+        <p class="wk-tags">Google Ads · LinkedIn · Facebook · Analytics</p>
+        <span class="wk-go">View case study <i>→</i></span>
+      </a>
+      <a class="wk-tile " href="/work/sportsbook-social-content-case-study.html">
+        <p class="wk-ind">Sports betting</p>
+        <p class="wk-stat">10</p><p class="wk-stat-l">social posts in one content batch</p>
+        <p class="wk-h">A different job for every match-day post</p>
+        <p class="wk-tags">Social media · Content · Creative</p>
+        <span class="wk-go">View case study <i>→</i></span>
+      </a>
+      <a class="wk-tile " href="/work/us-legal-service-cost-per-sale-case-study.html">
+        <p class="wk-ind">Online legal services (US)</p>
+        <p class="wk-stat">US$32–54</p><p class="wk-stat-l">reported cost per sale</p>
+        <p class="wk-h">What did it cost to acquire a paying customer?</p>
+        <p class="wk-tags">Paid media · Acquisition · Reporting</p>
+        <span class="wk-go">View case study <i>→</i></span>
+      </a>
       </div>
     </div>
   </section>
 
-  <section class="section cs-section">
+  <section class="section section-alt" aria-label="Concept work">
     <div class="section-inner">
-      <div class="cs-header">
-        <div class="cs-index">01</div>
-        <div>
-          <p class="work-cat">Brand Identity · Digital Strategy · Web</p>
-          <h2 class="cs-title">Apex Capital</h2>
-          <p class="cs-industry">Financial Services — Johannesburg</p>
-          <span class="illustrative-tag">Illustrative concept · fictional brand</span>
-        </div>
-      </div>
-
-      <!-- Creative Concept -->
-      <div class="cs-concept">
-        <div class="cs-concept-visual" style="background:#0a0a0a; min-height: 420px;">
-          <!-- Apex Capital hero ad mock -->
-          <div style="position:relative;width:100%;height:100%;display:flex;align-items:stretch;">
-            <!-- Left panel: dark brand -->
-            <div style="flex:1;padding:3rem 2.5rem;display:flex;flex-direction:column;justify-content:space-between;">
-              <div>
-                <div style="display:flex;gap:4px;margin-bottom:2.5rem;">
-                  <div style="width:2px;height:32px;background:white;"></div>
-                  <div style="width:2px;height:32px;background:rgba(255,255,255,0.4);"></div>
-                  <div style="width:2px;height:32px;background:rgba(255,255,255,0.2);"></div>
-                </div>
-                <div style="font-family:'Barlow Condensed',sans-serif;font-size:clamp(2rem,4vw,3.5rem);font-weight:700;color:white;text-transform:uppercase;line-height:0.95;letter-spacing:-0.01em;">YOUR<br/>WEALTH.<br/><span style="-webkit-text-stroke:1px rgba(255,255,255,0.5);color:transparent;">YOUR<br/>LEGACY.</span></div>
-              </div>
-              <div>
-                <div style="height:1px;background:rgba(255,255,255,0.12);margin-bottom:1.25rem;"></div>
-                <div style="font-size:0.65rem;letter-spacing:0.18em;text-transform:uppercase;color:rgba(255,255,255,0.4);">APEX CAPITAL — Private Wealth Management</div>
-                <div style="margin-top:1rem;display:inline-block;border:1px solid rgba(255,255,255,0.3);padding:0.55rem 1.25rem;font-size:0.65rem;letter-spacing:0.15em;text-transform:uppercase;color:rgba(255,255,255,0.7);">Book a Consultation →</div>
-              </div>
-            </div>
-            <!-- Right panel: stat highlight -->
-            <div style="width:220px;background:rgba(255,255,255,0.04);border-left:1px solid rgba(255,255,255,0.06);padding:2rem;display:flex;flex-direction:column;justify-content:center;gap:1.5rem;">
-              <div>
-                <div style="font-family:'Barlow Condensed',sans-serif;font-size:2.5rem;font-weight:700;color:white;line-height:1;">R1.2B</div>
-                <div style="font-size:0.6rem;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.35);margin-top:4px;">Assets Under Management</div>
-              </div>
-              <div style="height:1px;background:rgba(255,255,255,0.08);"></div>
-              <div>
-                <div style="font-family:'Barlow Condensed',sans-serif;font-size:2.5rem;font-weight:700;color:white;line-height:1;">18 yrs</div>
-                <div style="font-size:0.6rem;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.35);margin-top:4px;">Trusted Experience</div>
-              </div>
-              <div style="height:1px;background:rgba(255,255,255,0.08);"></div>
-              <div>
-                <div style="font-family:'Barlow Condensed',sans-serif;font-size:2.5rem;font-weight:700;color:white;line-height:1;">340+</div>
-                <div style="font-size:0.6rem;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.35);margin-top:4px;">HNW Clients</div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="cs-concept-label">
-          <span class="cs-concept-tag">Creative Concept</span>
-          <p class="cs-concept-desc">Google Display & LinkedIn hero ad — "Your Wealth. Your Legacy." campaign targeting HNW individuals aged 45–65 in Gauteng.</p>
-        </div>
-      </div>
-
-      <!-- Problem / Solution -->
-      <div class="cs-ps-grid">
-        <div class="cs-problem">
-          <p class="cs-ps-label">The Problem</p>
-          <p class="cs-ps-text">Apex Capital had a loyal client base built over 18 years — but their digital footprint looked like it was also 18 years old. A dated website, no active paid media, and a brand identity that felt cold and inaccessible were costing them qualified leads every week. Younger high-net-worth prospects couldn't see themselves in the brand.</p>
-        </div>
-        <div class="cs-solution">
-          <p class="cs-ps-label">The Solution</p>
-          <p class="cs-ps-text">We repositioned Apex around a single truth: <em>wealth is personal.</em> A refined brand identity — editorial typography, a restrained colour palette, and intentional white space — signalled authority without arrogance. A Google Display and LinkedIn campaign targeted HNW prospects with trust-forward creative that drove qualified consultation bookings.</p>
-        </div>
-      </div>
-
-      <div class="cs-results-bar">
-        <div class="cs-result"><span class="cs-result-num">+340%</span><span class="cs-result-lbl">Consultation enquiries</span></div>
-        <div class="cs-result"><span class="cs-result-num">2.1×</span><span class="cs-result-lbl">Qualified leads MoM</span></div>
-        <div class="cs-result"><span class="cs-result-num">4 wks</span><span class="cs-result-lbl">Brand to live campaign</span></div>
-        <div class="cs-result"><span class="cs-result-num">R18 CPC</span><span class="cs-result-lbl">Avg. cost per click</span></div>
+      <p class="section-label">Concept Work</p>
+      <h2 class="section-title">How We'd Approach a Brief.</h2>
+      <p class="wk-note">Creative concepts for fictional brands, showing our thinking from brand to campaign. The figures on these pages are illustrative, not client results.</p>
+      <div class="wk-grid c4">
+      <a class="wk-tile concept" href="/work/concept-apex-capital.html">
+        <span class="wk-badge">Concept · fictional brand</span>
+        <p class="wk-ind">Financial Services — Johannesburg</p>
+        <p class="wk-h">Apex Capital</p>
+        <p class="wk-tags">Brand Identity · Digital Strategy · Web</p>
+        <span class="wk-go">View concept <i>→</i></span>
+      </a>
+      <a class="wk-tile concept" href="/work/concept-vela-skincare.html">
+        <span class="wk-badge">Concept · fictional brand</span>
+        <p class="wk-ind">Beauty &amp; E-commerce — Cape Town</p>
+        <p class="wk-h">Vela Skincare</p>
+        <p class="wk-tags">META Ads · Google Shopping · Content Strategy</p>
+        <span class="wk-go">View concept <i>→</i></span>
+      </a>
+      <a class="wk-tile concept" href="/work/concept-nomad-gear-co.html">
+        <span class="wk-badge">Concept · fictional brand</span>
+        <p class="wk-ind">Adventure &amp; Lifestyle — Nationwide Launch</p>
+        <p class="wk-h">Nomad Gear Co.</p>
+        <p class="wk-tags">Brand Launch · META Ads · Content Strategy · Influencer</p>
+        <span class="wk-go">View concept <i>→</i></span>
+      </a>
+      <a class="wk-tile concept" href="/work/concept-greenleaf-clinics.html">
+        <span class="wk-badge">Concept · fictional brand</span>
+        <p class="wk-ind">Healthcare &amp; Wellness — Gauteng</p>
+        <p class="wk-h">GreenLeaf Clinics</p>
+        <p class="wk-tags">Google Search Ads · Landing Page · Lead Generation</p>
+        <span class="wk-go">View concept <i>→</i></span>
+      </a>
       </div>
     </div>
   </section>
-
-  <!-- ── CASE STUDY 2: VELA SKINCARE ── -->
-  <section class="section cs-section section-alt">
-    <div class="section-inner">
-      <div class="cs-header">
-        <div class="cs-index">02</div>
-        <div>
-          <p class="work-cat">META Ads · Google Shopping · Content Strategy</p>
-          <h2 class="cs-title">Vela Skincare</h2>
-          <p class="cs-industry">Beauty & E-commerce — Cape Town</p>
-          <span class="illustrative-tag">Illustrative concept · fictional brand</span>
-        </div>
-      </div>
-
-      <div class="cs-concept">
-        <div class="cs-concept-visual" style="background: linear-gradient(145deg,#fdf6f0 0%,#f5e6d8 100%); min-height: 420px;">
-          <!-- Vela social ad carousel mock -->
-          <div style="padding:2.5rem;display:flex;gap:1rem;height:100%;align-items:center;justify-content:center;">
-            <!-- Card 1 - active -->
-            <div style="flex:1.4;background:white;padding:1.75rem;box-shadow:0 8px 40px rgba(0,0,0,0.1);display:flex;flex-direction:column;justify-content:space-between;min-height:280px;">
-              <div>
-                <div style="font-size:0.55rem;letter-spacing:0.18em;text-transform:uppercase;color:#a08070;margin-bottom:0.75rem;">VELA — GLOW COLLECTION</div>
-                <div style="font-family:'Barlow Condensed',sans-serif;font-size:1.9rem;font-weight:600;color:#2c1a0e;text-transform:uppercase;line-height:1.05;">Your Skin,<br/>Reimagined.</div>
-                <div style="margin-top:0.75rem;font-size:0.75rem;color:#8a6a58;line-height:1.6;">Natural actives. Zero compromise.<br/>Results in 14 days.</div>
-              </div>
-              <div style="display:flex;flex-direction:column;gap:0.5rem;margin-top:1rem;">
-                <div style="background:#2c1a0e;color:white;font-size:0.6rem;letter-spacing:0.15em;text-transform:uppercase;padding:0.6rem 1rem;text-align:center;">Shop the Collection</div>
-                <div style="display:flex;gap:6px;justify-content:center;margin-top:0.25rem;">
-                  <div style="width:20px;height:3px;background:#2c1a0e;border-radius:2px;"></div>
-                  <div style="width:8px;height:3px;background:#d4b8a8;border-radius:2px;"></div>
-                  <div style="width:8px;height:3px;background:#d4b8a8;border-radius:2px;"></div>
-                </div>
-              </div>
-            </div>
-            <!-- Card 2 - peek -->
-            <div style="flex:0.9;background:#fdf0e8;padding:1.25rem;opacity:0.7;min-height:220px;display:flex;flex-direction:column;justify-content:space-between;">
-              <div>
-                <div style="font-size:0.5rem;letter-spacing:0.15em;text-transform:uppercase;color:#a08070;margin-bottom:0.5rem;">BEFORE / AFTER</div>
-                <div style="height:80px;background:linear-gradient(to right,#e8d5c4 50%,#f5ede5 50%);border-radius:1px;display:flex;align-items:center;justify-content:center;">
-                  <div style="width:1px;height:100%;background:white;"></div>
-                </div>
-                <div style="font-family:'Barlow Condensed',sans-serif;font-size:1.2rem;font-weight:600;color:#2c1a0e;margin-top:0.75rem;text-transform:uppercase;">14 Day<br/>Results</div>
-              </div>
-            </div>
-            <!-- Card 3 - peek further -->
-            <div style="flex:0.6;background:#f0e4da;padding:1rem;opacity:0.4;min-height:180px;">
-              <div style="font-size:0.5rem;letter-spacing:0.12em;text-transform:uppercase;color:#a08070;margin-bottom:0.5rem;">INGREDIENTS</div>
-              <div style="display:flex;flex-direction:column;gap:4px;">
-                <div style="height:5px;background:#c4a090;border-radius:1px;width:80%;"></div>
-                <div style="height:5px;background:#c4a090;border-radius:1px;width:60%;"></div>
-                <div style="height:5px;background:#c4a090;border-radius:1px;width:70%;"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="cs-concept-label">
-          <span class="cs-concept-tag">Creative Concept</span>
-          <p class="cs-concept-desc">META carousel ad — "Your Skin, Reimagined." 3-card sequence driving from awareness to product page. Targeted women 25–45 interested in clean beauty across South Africa.</p>
-        </div>
-      </div>
-
-      <div class="cs-ps-grid">
-        <div class="cs-problem">
-          <p class="cs-ps-label">The Problem</p>
-          <p class="cs-ps-text">Vela had a great product and a loyal following of around 4,000 Instagram fans — but their paid media was non-existent and online sales had plateaued. They were spending money on content that wasn't converting, and had no visibility on which channels or messages were actually working.</p>
-        </div>
-        <div class="cs-solution">
-          <p class="cs-ps-label">The Solution</p>
-          <p class="cs-ps-text">We audited their organic content, identified their three highest-converting product lines, and built a full-funnel META strategy: awareness carousel ads drove cold traffic, retargeting ads hit warm audiences with social proof and UGC, and Google Shopping captured high-intent search demand. Every rand spent was tracked to revenue.</p>
-        </div>
-      </div>
-
-      <div class="cs-results-bar">
-        <div class="cs-result"><span class="cs-result-num">+128%</span><span class="cs-result-lbl">Monthly revenue</span></div>
-        <div class="cs-result"><span class="cs-result-num">4.8×</span><span class="cs-result-lbl">Return on ad spend</span></div>
-        <div class="cs-result"><span class="cs-result-num">−38%</span><span class="cs-result-lbl">Cost per purchase</span></div>
-        <div class="cs-result"><span class="cs-result-num">90 days</span><span class="cs-result-lbl">To full results</span></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ── CASE STUDY 3: NOMAD GEAR ── -->
-  <section class="section cs-section">
-    <div class="section-inner">
-      <div class="cs-header">
-        <div class="cs-index">03</div>
-        <div>
-          <p class="work-cat">Brand Launch · META Ads · Content Strategy · Influencer</p>
-          <h2 class="cs-title">Nomad Gear Co.</h2>
-          <p class="cs-industry">Adventure & Lifestyle — Nationwide Launch</p>
-          <span class="illustrative-tag">Illustrative concept · fictional brand</span>
-        </div>
-      </div>
-
-      <div class="cs-concept">
-        <div class="cs-concept-visual" style="background:#0d1117; min-height:420px; overflow:hidden; position:relative;">
-          <!-- Nomad social campaign mock -->
-          <div style="position:absolute;inset:0;background:radial-gradient(circle at 70% 40%, rgba(255,140,0,0.08) 0%, transparent 60%);"></div>
-          <div style="padding:2.5rem;height:100%;display:flex;flex-direction:column;justify-content:space-between;position:relative;">
-            <div style="display:flex;justify-content:space-between;align-items:flex-start;">
-              <div>
-                <div style="font-size:0.55rem;letter-spacing:0.2em;text-transform:uppercase;color:rgba(255,255,255,0.35);margin-bottom:0.5rem;">@nomadgearco · Sponsored</div>
-                <div style="font-family:'Barlow Condensed',sans-serif;font-size:clamp(2.2rem,5vw,4rem);font-weight:700;color:white;text-transform:uppercase;line-height:0.95;letter-spacing:-0.01em;">BUILT<br/>FOR THE<br/><span style="color:#ff8c00;">UNTAMED.</span></div>
-              </div>
-              <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.08);padding:0.75rem 1rem;text-align:right;">
-                <div style="font-family:'Barlow Condensed',sans-serif;font-size:1.6rem;font-weight:700;color:white;">560K</div>
-                <div style="font-size:0.55rem;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.35);">Reached</div>
-              </div>
-            </div>
-            <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:0.5rem;">
-              <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.06);padding:1rem;">
-                <div style="font-size:0.5rem;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.3);margin-bottom:0.4rem;">Impressions</div>
-                <div style="font-family:'Barlow Condensed',sans-serif;font-size:1.4rem;font-weight:700;color:white;">1.2M</div>
-              </div>
-              <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.06);padding:1rem;">
-                <div style="font-size:0.5rem;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.3);margin-bottom:0.4rem;">Site Visits</div>
-                <div style="font-family:'Barlow Condensed',sans-serif;font-size:1.4rem;font-weight:700;color:white;">12K</div>
-              </div>
-              <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.06);padding:1rem;">
-                <div style="font-size:0.5rem;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.3);margin-bottom:0.4rem;">CTR</div>
-                <div style="font-family:'Barlow Condensed',sans-serif;font-size:1.4rem;font-weight:700;color:#ff8c00;">3.8%</div>
-              </div>
-            </div>
-            <div style="display:flex;align-items:center;justify-content:space-between;">
-              <div style="font-size:0.7rem;color:rgba(255,255,255,0.5);max-width:280px;line-height:1.6;">Gear engineered for South Africa's wild — from the Drakensberg to the Richtersveld.</div>
-              <div style="border:1px solid rgba(255,140,0,0.5);padding:0.5rem 1rem;font-size:0.6rem;letter-spacing:0.15em;text-transform:uppercase;color:#ff8c00;">Shop Now →</div>
-            </div>
-          </div>
-        </div>
-        <div class="cs-concept-label">
-          <span class="cs-concept-tag">Creative Concept</span>
-          <p class="cs-concept-desc">META brand launch campaign — "Built for the Untamed." Single-image and video ads targeting adventure, hiking and overlanding communities across SA. Paired with micro-influencer UGC for social proof.</p>
-        </div>
-      </div>
-
-      <div class="cs-ps-grid">
-        <div class="cs-problem">
-          <p class="cs-ps-label">The Problem</p>
-          <p class="cs-ps-text">Nomad Gear Co. was launching into a crowded adventure gear market with zero brand recognition. Their budget was limited, their timeline was aggressive (30 days to launch), and they were competing against established international brands with much larger ad spend. They needed fast awareness and early sales to validate the business.</p>
-        </div>
-        <div class="cs-solution">
-          <p class="cs-ps-label">The Solution</p>
-          <p class="cs-ps-text">We built a brand platform around a single rallying idea: <em>Built for the Untamed.</em> A lean META campaign combined striking product-in-landscape creative with partnerships with five SA micro-influencers in the adventure space. Paid amplification of the best-performing influencer content kept costs down while maximising authentic reach — and drove 12,000 site visits in 30 days from a cold audience.</p>
-        </div>
-      </div>
-
-      <div class="cs-results-bar">
-        <div class="cs-result"><span class="cs-result-num">560K</span><span class="cs-result-lbl">People reached</span></div>
-        <div class="cs-result"><span class="cs-result-num">12K</span><span class="cs-result-lbl">Site visits (30 days)</span></div>
-        <div class="cs-result"><span class="cs-result-num">3.8%</span><span class="cs-result-lbl">Click-through rate</span></div>
-        <div class="cs-result"><span class="cs-result-num">×5</span><span class="cs-result-lbl">Influencer partnerships</span></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ── CASE STUDY 4: GREENLEAF CLINICS ── -->
-  <section class="section cs-section section-alt">
-    <div class="section-inner">
-      <div class="cs-header">
-        <div class="cs-index">04</div>
-        <div>
-          <p class="work-cat">Google Search Ads · Landing Page · Lead Generation</p>
-          <h2 class="cs-title">GreenLeaf Clinics</h2>
-          <p class="cs-industry">Healthcare & Wellness — Gauteng</p>
-          <span class="illustrative-tag">Illustrative concept · fictional brand</span>
-        </div>
-      </div>
-
-      <div class="cs-concept">
-        <div class="cs-concept-visual" style="background:#f8fdf9; min-height:420px;">
-          <div style="padding:2.5rem;height:100%;display:flex;flex-direction:column;gap:1.5rem;">
-            <!-- Simulated Google SERP ad -->
-            <div style="background:white;border:1px solid #e0e0e0;border-radius:2px;padding:1.25rem 1.5rem;box-shadow:0 2px 12px rgba(0,0,0,0.06);">
-              <div style="font-size:0.55rem;letter-spacing:0.1em;color:#666;margin-bottom:0.3rem;">Sponsored · greenleafclinics.co.za</div>
-              <div style="font-size:1rem;font-weight:600;color:#1a73e8;margin-bottom:0.3rem;">GreenLeaf Clinics — Book Your Wellness Consultation</div>
-              <div style="font-size:0.8rem;color:#444;line-height:1.5;">Specialised wellness care in Gauteng. Same-week appointments available. Trusted by 2,000+ patients. Book online in 60 seconds.</div>
-              <div style="display:flex;gap:0.75rem;margin-top:0.6rem;flex-wrap:wrap;">
-                <span style="font-size:0.65rem;color:#1a73e8;border:1px solid #dadce0;padding:0.2rem 0.5rem;border-radius:2px;">Book Online</span>
-                <span style="font-size:0.65rem;color:#1a73e8;border:1px solid #dadce0;padding:0.2rem 0.5rem;border-radius:2px;">Our Services</span>
-                <span style="font-size:0.65rem;color:#1a73e8;border:1px solid #dadce0;padding:0.2rem 0.5rem;border-radius:2px;">Patient Reviews</span>
-              </div>
-            </div>
-            <!-- Landing page preview -->
-            <div style="background:white;border:1px solid #e0e0e0;border-radius:2px;flex:1;display:flex;overflow:hidden;box-shadow:0 2px 12px rgba(0,0,0,0.06);">
-              <div style="flex:1;padding:1.5rem;border-right:1px solid #f0f0f0;">
-                <div style="font-size:0.5rem;letter-spacing:0.15em;text-transform:uppercase;color:#0d4f3c;margin-bottom:0.5rem;">GREENLEAF CLINICS</div>
-                <div style="font-family:'Barlow Condensed',sans-serif;font-size:1.6rem;font-weight:700;color:#0d4f3c;text-transform:uppercase;line-height:1.05;">Feel Better.<br/>Faster.</div>
-                <div style="font-size:0.7rem;color:#555;line-height:1.6;margin-top:0.5rem;">Same-week appointments.<br/>Evidence-based wellness care.</div>
-                <div style="margin-top:0.75rem;background:#0d4f3c;color:white;font-size:0.6rem;letter-spacing:0.12em;text-transform:uppercase;padding:0.55rem 1rem;display:inline-block;">Book Now — It's Free</div>
-              </div>
-              <div style="width:140px;padding:1rem;display:flex;flex-direction:column;gap:0.5rem;">
-                <div style="background:#f0faf3;border:1px solid #c8e6d0;border-radius:1px;padding:0.6rem;font-size:0.6rem;color:#0d4f3c;"><strong style="display:block;font-size:0.8rem;">214%</strong>More leads</div>
-                <div style="background:#f0faf3;border:1px solid #c8e6d0;border-radius:1px;padding:0.6rem;font-size:0.6rem;color:#0d4f3c;"><strong style="display:block;font-size:0.8rem;">−40%</strong>Cost per lead</div>
-                <div style="background:#f0faf3;border:1px solid #c8e6d0;border-radius:1px;padding:0.6rem;font-size:0.6rem;color:#0d4f3c;"><strong style="display:block;font-size:0.8rem;">68%</strong>Booking rate</div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="cs-concept-label">
-          <span class="cs-concept-tag">Creative Concept</span>
-          <p class="cs-concept-desc">Google Search ads + dedicated landing page — "Feel Better. Faster." Keyword targeting across wellness, anxiety, fatigue and chronic pain searches in Gauteng, linked to a conversion-optimised booking page.</p>
-        </div>
-      </div>
-
-      <div class="cs-ps-grid">
-        <div class="cs-problem">
-          <p class="cs-ps-label">The Problem</p>
-          <p class="cs-ps-text">GreenLeaf Clinics had two locations in Gauteng, a good reputation among existing patients, and a Google Ads account that had been running for 18 months — with nothing to show for it. Broad keywords, no conversion tracking, and a homepage used as a landing page meant they were paying for clicks that went nowhere. New patient bookings had stagnated for a year.</p>
-        </div>
-        <div class="cs-solution">
-          <p class="cs-ps-label">The Solution</p>
-          <p class="cs-ps-text">We rebuilt the Google Ads account from scratch: tight, intent-based keyword targeting, negative keyword lists, and three new campaign-specific landing pages built around a single CTA — <em>Book Now, It's Free.</em> Conversion tracking was installed properly for the first time, giving us real data to optimise against. Within 6 weeks, cost per lead dropped by 40% and bookings hit a new monthly record.</p>
-        </div>
-      </div>
-
-      <div class="cs-results-bar">
-        <div class="cs-result"><span class="cs-result-num">+214%</span><span class="cs-result-lbl">New patient leads</span></div>
-        <div class="cs-result"><span class="cs-result-num">−40%</span><span class="cs-result-lbl">Cost per lead</span></div>
-        <div class="cs-result"><span class="cs-result-num">68%</span><span class="cs-result-lbl">Landing page conversion</span></div>
-        <div class="cs-result"><span class="cs-result-num">6 wks</span><span class="cs-result-lbl">To new record bookings</span></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA -->
-  <section class="section section-dark">
-    <div class="section-inner" style="text-align: center; max-width: 700px; margin: 0 auto;">
-      <p class="section-label" style="justify-content: center;">Start a Project</p>
-      <h2 class="section-title" style="margin-bottom: 1.5rem;">Your Brand<br/>Could Be Next</h2>
-      <p class="section-subtitle" style="margin: 0 auto 2.5rem; color: #777;">Every brief is different. Tell us yours and we'll tell you how we'd approach it.</p>
-      <a href="/contact.html" class="btn-primary" style="background: var(--white); color: var(--black); border-color: var(--white);">Get in Touch</a>
-    </div>
-  </section>
-
 
 <!-- CTA -->
 <section class="section section-dark">
