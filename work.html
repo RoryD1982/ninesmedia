@@ -127,6 +127,34 @@
 .nm-mobile-sub a{font-size:.85rem!important;opacity:.8;padding:.3rem 0!important;text-transform:none!important;letter-spacing:0!important;display:block}
 </style>
 <link rel="stylesheet" href="/css/nav.css" />
+<style>
+    .cs-wrap{max-width:860px;margin:0 auto}
+    .cs-crumbs{font-size:.8rem;color:#888;margin-bottom:1.5rem}.cs-crumbs a{color:#888;text-decoration:none}
+    .cs-tags{display:flex;flex-wrap:wrap;gap:.5rem;margin:0 0 2rem}.cs-tags span{font-size:.75rem;font-weight:600;padding:.35rem .7rem;border:1px solid #e0e0da;border-radius:999px;color:#555}
+    .cs-body h2{font-family:var(--font-display);font-size:clamp(1.6rem,4vw,2.3rem);font-weight:700;color:var(--black);margin:2.75rem 0 .75rem}
+    .cs-body p,.cs-body li{color:#444;line-height:1.75;font-size:1rem}
+    .cs-body ul{padding-left:1.2rem}
+    .cs-results{background:#0d0d0d;color:#fff;border-radius:6px;padding:clamp(1.5rem,4vw,2.75rem);margin:2.5rem 0}
+    .cs-results .lbl{font-size:.72rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:#FF2D6B;margin:0 0 1.5rem}
+    .cs-kpis{display:grid;grid-template-columns:1fr 1fr;gap:2rem}
+    @media(max-width:640px){.cs-kpis{grid-template-columns:1fr;gap:3rem}}
+    .cs-kpi .num{font-family:var(--font-display);font-weight:800;font-size:clamp(3.2rem,10vw,5.5rem);line-height:1;color:#FF2D6B}
+    .cs-kpi .cap{color:#ccc;font-size:.95rem;margin:.4rem 0 1.25rem}
+    .bars{display:flex;align-items:flex-end;gap:1rem;height:150px;border-bottom:1px solid #333;padding:0 .25rem}
+    .bar{flex:1;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;height:100%}
+    .bar i{display:block;width:100%;max-width:90px;background:#3a3a3a;border-radius:3px 3px 0 0;height:0;transition:height 1.6s cubic-bezier(.2,.8,.2,1)}
+    .bar.after i{background:#FF2D6B}
+    .bar b{font-size:.75rem;color:#999;font-weight:600;margin-top:.5rem;position:relative;top:1.6rem}
+    .gauge{position:relative;height:150px;display:flex;align-items:flex-end}
+    .gauge .track{width:100%;height:14px;background:#2a2a2a;border-radius:999px;overflow:hidden}
+    .gauge .fill{height:100%;width:0;background:linear-gradient(90deg,#FF2D6B,#ff7aa0);border-radius:999px;transition:width 1.6s cubic-bezier(.2,.8,.2,1) .2s}
+    .gauge .note{position:absolute;top:1.5rem;left:0;color:#999;font-size:.8rem;line-height:1.5;max-width:320px}
+    .cs-foot{font-size:.78rem;color:#888;margin-top:2.25rem}
+    .cs-video{margin:2rem 0;border-radius:6px;overflow:hidden;background:#0d0d0d}
+    .cs-video video{display:block;width:100%;height:auto}
+    @media (prefers-reduced-motion: reduce){.bar i,.gauge .fill{transition:none}}
+    @media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .cs-body h2{color:#eee}:root:not([data-theme="light"]) .cs-body p,:root:not([data-theme="light"]) .cs-body li{color:#bbb}:root:not([data-theme="light"]) .cs-tags span{color:#bbb;border-color:#333}}
+</style>
 </head>
 <body>
 
@@ -168,11 +196,42 @@
     <div class="section-inner">
       <p class="section-label">Selected Projects</p>
       <h1 class="section-title" style="font-size: clamp(3rem, 8vw, 6rem);">Our<br/>Work</h1>
-      <p class="section-subtitle">Concept work showing how we approach a brief, from creative to campaign. The brands below are fictional: we don't publish real client work without permission.</p>
+      <p class="section-subtitle">A real client result, followed by concept work showing how we approach a brief. The concept brands are fictional: we don't publish client work without permission.</p>
     </div>
   </section>
 
   <!-- ── CASE STUDY 1: APEX CAPITAL ── -->
+  <section class="section" aria-label="Client results">
+    <div class="section-inner cs-wrap cs-body">
+      <p class="section-label">Client Results · Insurance</p>
+      <h2 class="section-title" style="margin-bottom:.75rem">+1,000% More Leads for a<br/>South African Insurer.</h2>
+      <p style="color:#555;line-height:1.7;max-width:640px">Real client work, anonymised at the client's request. Google Ads, Meta ads, landing pages and lead tracking delivered a 1,000% increase in leads and a 30-percentage-point higher closing ratio within six months.</p>
+
+      <div class="cs-results" data-cs-anim>
+        <p class="lbl">Results within six months</p>
+        <div class="cs-kpis">
+          <div class="cs-kpi">
+            <div class="num" data-to="1000" data-prefix="+" data-suffix="%">+1,000%</div>
+            <p class="cap">increase in monthly leads</p>
+            <div class="bars" aria-hidden="true">
+              <div class="bar"><i data-h="9"></i><b>Before</b></div>
+              <div class="bar after"><i data-h="99"></i><b>After 6 months</b></div>
+            </div>
+          </div>
+          <div class="cs-kpi">
+            <div class="num" data-to="30" data-prefix="+" data-suffix=" pts">+30 pts</div>
+            <p class="cap">improvement in closing ratio (percentage points)</p>
+            <div class="gauge" aria-hidden="true">
+              <p class="note">More of the leads became paying policyholders, because the campaigns and forms brought in better-qualified prospects.</p>
+              <div class="track"><div class="fill" data-w="100"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p style="margin:0"><a href="/work/insurance-lead-generation-case-study.html" class="btn-primary">Read the full case study</a></p>
+    </div>
+  </section>
+
   <section class="section cs-section">
     <div class="section-inner">
       <div class="cs-header">
@@ -554,5 +613,30 @@
 </a>
 
 <script src="/js/nav.js" defer></script>
+
+<script>
+(function(){
+  var els=document.querySelectorAll('[data-cs-anim]'); if(!els.length) return;
+  var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function fmt(n){return n.toLocaleString('en-ZA').replace(/\u00a0/g,',').replace(/\s/g,',');}
+  function run(box){
+    box.querySelectorAll('.bar i').forEach(function(b){b.style.height=b.dataset.h+'%';});
+    box.querySelectorAll('.gauge .fill').forEach(function(f){f.style.width=f.dataset.w+'%';});
+    box.querySelectorAll('.num[data-to]').forEach(function(n){
+      var to=+n.dataset.to,p=n.dataset.prefix||'',s=n.dataset.suffix||'';
+      if(reduce){n.textContent=p+fmt(to)+s;return;}
+      var t0=null,d=1600;
+      function step(t){if(!t0)t0=t;var k=Math.min(1,(t-t0)/d),e=1-Math.pow(1-k,3);n.textContent=p+fmt(Math.round(to*e))+s;if(k<1)requestAnimationFrame(step);}
+      requestAnimationFrame(step);
+    });
+  }
+  els.forEach(function(box){
+    box.querySelectorAll('.num[data-to]').forEach(function(n){n.textContent=(n.dataset.prefix||'')+'0'+(n.dataset.suffix||'');});
+    if(!('IntersectionObserver' in window)){run(box);return;}
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){run(box);io.disconnect();}});},{threshold:.35});
+    io.observe(box);
+  });
+})();
+</script>
 </body>
 </html>
